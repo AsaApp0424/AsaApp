@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>AsaClock</title>
+        <link rel="stylesheet" href="C:\Users\rmyia\OneDrive\デスクトップ\WEBSITE\AsaClock\AsaClock.css">
+        <link rel="shortcut icon" href="C:\Users\rmyia\OneDrive\デスクトップ\WEBSITE\AsaClock\AsaClock_icon.png">
+    </head>
+    <body>
+        <img src="C:\Users\rmyia\OneDrive\デスクトップ\WEBSITE\AsaClock\darkmode.png" width="100px" id="darkmode" onClick="changemode()">
+        <img src="C:\Users\rmyia\OneDrive\デスクトップ\WEBSITE\AsaClock\AsaClock_home.png" width="400px" id="top">
+        <div class="clock">
+            <div class="analogclock" id="analogclock">
+                <span class="edgehour"></span>
+                <span class="edgeminute"></span>
+                <span class="edgesecond" id="edgesecond"></span>
+                <span class="clock12">12</span>
+                <span class="clock3">3</span>
+                <span class="clock6">6</span>
+                <span class="clock9">9</span>
+                <span id="circle"></span>
+            </div>
+            <div class="digitalclock">
+                <p id="digitaltime"></p>
+            </div>
+        </div>
+        <script>
+            var mode = 0;
+            var modes = new Array("brightmode.png", "darkmode.png");
+            var tops = new Array("AsaClock_home_dark.png", "AsaClock_home.png");
+            function changemode(){
+                if(mode == 0){
+                    mode = 1;
+                    document.fgColor = "white";
+                    document.bgColor = "black";
+                    document.getElementById("darkmode").src = modes[0];
+                    document.getElementById("top").src = tops[0];
+                    document.getElementById('edgesecond').style.backgroundColor = "white";
+                    document.getElementById('analogclock').style.borderColor = "white";
+                }else{
+                    mode = 0;
+                    document.fgColor = "black";
+                    document.bgColor = "white";
+                    document.getElementById("darkmode").src = modes[1];
+                    document.getElementById("top").src = tops[1];
+                    document.getElementById('edgesecond').style.backgroundColor = "black";
+                    document.getElementById('analogclock').style.borderColor = "black";
+                }
+
+            }
+            function showclock(){
+                var today = new Date();
+                var year = today.getFullYear();
+                var month = today.getMonth();
+                var date = today.getDate();
+                var hour = today.getHours();
+                var minute = today.getMinutes();
+                var second = today.getSeconds();
+
+                var deghour = hour / 12 * 360;
+                var degminute = minute / 60 * 360;
+                var degsecond = second / 60 * 360;
+
+                var edgehour = document.getElementsByClassName('edgehour')[0];
+                var edgeminute = document.getElementsByClassName('edgeminute')[0];
+                var edgesecond = document.getElementsByClassName('edgesecond')[0];
+                var digitaltime = "日付 : " + year + "年" + month + "月" + date + "日&nbsp;&nbsp;&nbsp;&nbsp;時刻 : " + hour + "時" + minute + "分" + second + "秒";
+
+                edgehour.style.setProperty('transform', `rotate(${deghour}deg)`);
+                edgeminute.style.setProperty('transform', `rotate(${degminute}deg)`);
+                edgesecond.style.setProperty('transform', `rotate(${degsecond}deg)`);
+                document.getElementById('digitaltime').innerHTML = digitaltime;
+            }
+            setInterval(showclock, 1000);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+@charset "utf-8";
+.top img{
+    display: block;
+    margin: auto;
+}
+h1{
+    font-size: 300%;
+    text-align: center;
+}

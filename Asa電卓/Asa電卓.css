@@ -1,0 +1,406 @@
+@charset "utf-8";
+img{
+    display:block;
+    margin:auto;
+    margin-top: -7%;
+}
+#answer{
+    font-size: 80px;
+    border: #000000 2px solid;
+    text-align: right;
+    word-break:break-all;
+    position: absolute;
+    bottom: 330px;
+    right: 5px;
+    width: 1000px;
+}
+#numbers0{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    bottom: 320px;
+    right: 0;
+}
+#numbers1{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    bottom: 240px;
+    right: 0;
+}
+#numbers2{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    bottom: 160px;
+    right: 0;
+}
+#numbers3{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+}
+#numbers4{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+#parenthesesL{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+#parenthesesL:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#parenthsesR{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#parenthsesR:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#Clear{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#Clear:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#backspace{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+#backspace:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+
+
+#seven{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+#seven:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#eight{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#eight:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#nine{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#nine:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#DevidedBy{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+#DevidedBy:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+
+
+#four{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+#four:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#five{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#five:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#six{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#six:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#times{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+#times:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+
+
+#one{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+#one:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#two{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#two:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#three{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#three:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#minus{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+#minus:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+
+
+#zero{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+#zero:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#DecimalPoint{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#DecimalPoint:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#enter{
+    font-size: 23px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#enter:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}
+#plus{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background:  #93d0ff;
+    border-bottom: #7eb6e1 5px solid;
+    border-right: #7eb6e1 5px solid;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+#plus:hover{
+    background:  #6dc0ff;
+    border-bottom: #56a0d8 5px solid;
+    border-right: #56a0d8 5px solid;
+}

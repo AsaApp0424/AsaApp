@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Asa電卓</title>
+        <link rel="stylesheet" href="C:\Users\rmyia\OneDrive\デスクトップ\WEBSITE\Asa電卓\Asa電卓.css">
+        <link rel="shortcut icon" href="C:\Users\rmyia\OneDrive\デスクトップ\WEBSITE\Asa電卓\Asa電卓_icon.png">
+    </head>
+
+    <body>
+        <img src="C:\Users\rmyia\OneDrive\デスクトップ\WEBSITE\Asa電卓\Asa電卓_Home.png" width="400px" id="home">
+        <p id="answer">0</p>
+
+
+        <div id="numbers0">
+            <li id="parenthesesL" onclick="parenthesesL()">(</li>
+            <li id="parenthsesR" onclick="parenthesesR()">)</li>
+            <li id="Clear" onclick="Clear()">C</li>
+            <li id="backspace" onclick="backspace()">←</li>
+        </div>
+        <div id="numbers1">
+            <li id="seven" onclick="seven()">7</li>
+            <li id="eight" onclick="eight()">8</li>
+            <li id="nine" onclick="nine()">9</li>
+            <li id="DevidedBy" onclick="DevidedBy()">÷</li>
+        </div>
+        <div id="numbers2">
+            <li id="four" onclick="four()">4</li>
+            <li id="five" onclick="five()">5</li>
+            <li id="six" onclick="six()">6</li>
+            <li id="times" onclick="times()">×</li>
+        </div>
+        <div id="numbers3">
+            <li id="one" onclick="one()">1</li>
+            <li id="two" onclick="two()">2</li>
+            <li id="three" onclick="three()">3</li>
+            <li id="minus" onclick="minus()">-</li>
+        </div>
+        <div id="numbers4">
+            <li id="zero" onclick="zero()">0</li>
+            <li id="DecimalPoint" onclick="DecimalPoint()">.</li>
+            <li id="enter" onclick="enter()">enter</li>
+            <li id="plus" onclick="plus()">+</li>
+        </div>
+
+
+        <script>
+            var nya = "";
+            var symbol = 0;
+            var P = 0;
+            function one(){
+                answer.innerText = answer.innerText + 1;
+                nya = nya + "1";
+                symbol = 0;
+            }
+            function two(){
+                answer.innerText = answer.innerText + 2;
+                nya = nya + "2";
+                symbol = 0;
+            }
+            function three(){
+                answer.innerText = answer.innerText + 3;
+                nya = nya + "3";
+                symbol = 0;
+            }
+            function four(){
+                answer.innerText = answer.innerText + 4;
+                nya = nya + "4";
+                symbol = 0;
+            }
+            function five(){
+                answer.innerText = answer.innerText + 5;
+                nya = nya + "5";
+                symbol = 0;
+            }
+            function six(){
+                answer.innerText = answer.innerText + 6;
+                nya = nya + "6";
+                symbol = 0;
+            }
+            function seven(){
+                answer.innerText = answer.innerText + 7;
+                nya = nya + "7";
+                symbol = 0;
+            }
+            function eight(){
+                answer.innerText = answer.innerText + 8;
+                nya = nya + "8";
+                symbol = 0;
+            }
+            function nine(){
+                answer.innerText = answer.innerText + 9;
+                nya = nya + "9";
+                symbol = 0;
+            }
+            function zero(){
+                answer.innerText = answer.innerText + 0;
+                nya = nya + "0";
+                symbol = 0;
+            }
+            function parenthesesL(){
+                answer.innerText = answer.innerText + "(";
+                nya = nya + "(";
+                P = P + 1;
+            }
+            function parenthesesR(){
+                if(P != 0){
+                    answer.innerText = answer.innerText + ")";
+                    nya = nya + ")";
+                    P = P - 1;
+                }else{
+                    return;
+                }
+
+            }
+            function DevidedBy(){
+                if(symbol  == 0){
+                    answer.innerText = answer.innerText + "÷";
+                    nya = nya + "/";
+                    symbol = 1;
+                }else{
+                    return;
+                }
+            }
+            function times(){
+                if(symbol == 0){
+                    answer.innerText = answer.innerText + "×";
+                    nya = nya + "*";
+                    symbol = 1;
+                }else{
+                    return;
+                }
+            }
+            function minus(){
+                answer.innerText = answer.innerText + "-";
+                nya = nya + "-";
+            }
+            function plus(){
+                if(symbol == 0){
+                    answer.innerText = answer.innerText + "+";
+                    nya = nya + "+";
+                    symbol = 1;
+                }else{
+                    return;
+                }
+            }
+            function DecimalPoint(){
+                answer.innerText = answer.innerText + ".";
+                nya = nya + ".";
+            }
+            function Clear(){
+                answer.innerText = 0;
+                nya = "";
+            }
+            function backspace(){
+                if(nya.slice(-1) == "("){
+                    P = P - 1;
+                }else if(nya.slice(-1) == ")"){
+                    P = P + 1;
+                }
+                var length = answer.innerText.length;
+                answer.innerText = answer.innerText.slice(0, length - 1);
+                nya = nya.slice(0, -1);
+                symbol = 0;
+            }
+            function enter(){
+                if(P == 0){
+                    nya = eval(nya);
+                    answer.innerText = nya;
+                    nya = nya.toString();
+                    symbol = 0;
+                }else{
+                    return;
+                }
+            }
+        </script>
+    </body>
+</html>

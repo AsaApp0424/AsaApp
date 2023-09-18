@@ -1,0 +1,58 @@
+//DIR
+int DIR(int N, int O, int P, int Y)
+{
+  int A;
+  int B;
+  int C;
+  int V;
+  int X;
+  int Z;
+ 
+  while(TRUE){
+    Z = get_bno(0);//現在の向き
+    X = Z - Y;//差
+    if(X > 180){
+      X = X - 360;
+    }else if(X < -180){
+       X = X + 360;
+    }
+    B = X - V;//偏差の微分
+    V = X;//微分用の今回偏差の保存
+    A = P*X;//操作量A＝比例ゲイン×偏差
+    C = N*B;//操作量C＝微分ゲイン×偏差の微分値
+    A = A + C;//操作量＝操作量A+操作量C
+    A = A/O;//定数Oで割る
+    if(A < -100){
+      A = -100;//操作量下限値
+    }else if(A > 100){
+      A = 100;//操作量上限値
+    }
+    if(A > 0 && A < 20){
+      A = 30;
+    }else if(A < 0 && A > -20){
+      A = -30;
+    }
+    gPwm[0] = A < 0 ? (A * -1) : A | 0x80;  
+    gPwm[1] = A < 0 ? (A * -1) : A | 0x80;
+    gPwm[2] = A < 0 ? (A * -1) : A | 0x80; 
+    gPwm[3] = A < 0 ? (A * -1) : A | 0x80;  
+    pwm_out();
+    if(X > -10 && X < 10){
+      break;
+    }else{
+      continue;
+    }
+  }
+}
+
+void user_main(void){
+  int N;
+  int O;
+  int P;
+  int Y;
+  N = 0;//微分ゲイン
+  O = 10;//操作量Aを割る定数
+  P = 1;//比例ゲイン
+  Y = get_bno(0);//攻め方向
+    DIR(N, O, P, Y);
+}

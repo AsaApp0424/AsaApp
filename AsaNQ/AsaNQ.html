@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Asa円球計算機</title>
+        <link rel="stylesheet" href="C:\Users\rmyia\OneDrive\デスクトップ\WEBSITE\AsaNQ\AsaNQ.css">
+        <link rel="shortcut icon" href="C:\Users\rmyia\OneDrive\デスクトップ\WEBSITE\AsaNQ\AsaNQ_icon.png">
+    </head>
+    <body bgcolor="#a4a4a4">
+        <div class="top">
+            <img src="C:\Users\rmyia\OneDrive\デスクトップ\WEBSITE\AsaNQ\AsaNQ_home.png" width="400px">
+        </div>
+
+
+        <div class="InputAll">
+        <p>
+            <input type="text" id="InputValue" placeholder="円（球）の直径を入力してください。" size="50px"><br>
+            <input type="text" id="InputValue2" placeholder="求める値の小数点以下の桁数を指定してください。" size="45px">
+            <input type="button" id="checkbutton" value="計算">
+        </p>
+        </div>
+        <div>
+        <p id="ans"></p></div>
+
+    <script>
+        function calculation(){
+            var pi = 3.14;
+            var diameter = InputValue.value;
+            var diameter = parseFloat(diameter);
+            var radius = diameter / 2;
+            var digits = InputValue2.value;
+            var digits = parseFloat(digits);
+            var D = 10**digits;
+            if(Number.isNaN(diameter) == true || Number.isNaN(digits) == true){
+                ans.innerText = "　　これは数字ではありません。\n　　再度実行してください。";
+            }
+            else if(diameter < 0 || digits < 0){
+                ans.innerText = "　　これは負の数です。\n　　再度実行してください。";
+            }
+            else{
+                var circumference = diameter*pi*D;
+                circumference = Math.round(circumference);
+                circumference = circumference/D;
+                var area = radius*radius*pi*D;
+                area = Math.round(area);
+                area = area/D;
+                var SurfaceArea = 4*pi*radius*radius*D;
+                SurfaceArea = Math.round(SurfaceArea);
+                SurfaceArea = SurfaceArea/D;
+                var volume = 4/3*pi*radius*radius*radius*D;
+                volume= Math.round(volume);
+                volume= volume/D;
+                ans.innerText = "この円の\n円周は　　" + circumference + "\n面積は　　" + area +"\n\nこの球の\n表面積は　" + SurfaceArea + "\n体積は　　" + volume + "\n　　　　　　　　　　　　　　　　です。";
+            }
+        }
+        var InputValue = document.getElementById("InputValue");
+        var InputValue2 = document.getElementById("InputValue2");
+        var checkbutton = document.getElementById("checkbutton");
+        var enterkey = document.getElementById("enterkey");
+        checkbutton.addEventListener("click", calculation);
+        window.document.onkeydown = function(event){
+            if(event.key === 'Enter'){
+                calculation();
+            }
+        }
+    </script>
+    </body>
+</html>

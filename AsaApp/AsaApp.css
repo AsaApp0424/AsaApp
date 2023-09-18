@@ -1,0 +1,44 @@
+@charset "utf-8";
+.top img{
+    display: block;
+    margin:auto;
+}
+.app{
+    width: 750px;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+.app a, .app p{
+    margin-bottom: 50px;
+}
+table a{
+    text-decoration:none;
+    font-size:250%;
+    font-family:Tahoma;
+    transition: 0.4s;
+}
+a:hover{
+    text-decoration:underline;
+    transition: 0.3s;
+}
+#ennkyuu{
+    color:#adadad;
+}
+#denntaku{
+    color:rgb(255, 227, 46);
+}
+#admix{
+    color:black;
+}
+#fx{
+    color:#be25ff;
+}
+#clock{
+    color:#ff0000;
+}
+table p{
+    font-size: 120%;
+    font-family: Century;
+    margin-left: 50px;
+}

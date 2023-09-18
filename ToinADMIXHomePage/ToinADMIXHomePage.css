@@ -1,0 +1,92 @@
+@charset "utf-8";
+.tohome{
+    position: fixed;
+}
+.tohome img{
+    margin-top: 0px;
+    margin-left: 3%;
+}
+.menu{
+    margin-top: 0px;
+    width: 70%;
+    margin-left: 17%;
+    display: block;
+    position: fixed;
+}
+.menu a{
+    color: #bd0fe9;
+    float:left;
+    width: 19%;
+    border-right: solid 1px #000000;
+    border-left: solid 1px #000000;
+    transition: 0.4s;
+    text-align: center;
+    font-family: Verdana;
+    text-decoration: none;
+}
+.menu a:hover{
+    color:#ffffff;
+    background-color: #bd0fe96f;
+    transition: 0.3s;
+}
+#background{
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    height: 12%;
+    font-size: 300%;
+    margin-top: -3%;
+}
+
+#admix_home{
+    text-align: center;
+    margin-top: 10px;
+}
+.admixes{
+    text-align: center;
+}
+.admixes img{
+    border:solid 2px #bd0fe96f;
+    border-radius: 10px;
+}
+.articles a{
+    text-decoration: none;
+    color: #bd0fe9;
+    transition: 0.4s;
+}
+.articles a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.articles h2{
+    font-size: 250%;
+    margin-top: 7%;
+    margin-left: 15%;
+}
+.articles h3{
+    font-family: serif;
+    font-size: 200%;
+    margin-left: 20%;
+}
+.articles p{
+    font-family: serif;
+    font-size: 130%;
+    margin-left: 25%;
+}
+.ending {
+    font-family: serif;
+    color: #ffff;
+    margin-top: 5%;
+    margin-right: -1%;
+    margin-left: -1%;
+    margin-bottom: -1%;
+    font-size: 100%;
+    text-align: center;
+    background-color: #bd0fe96f;
+    background-size: 100%;
+    text-decoration: none;
+    height: 30%;
+}
+#iru{
+    font-size: 1%;
+}

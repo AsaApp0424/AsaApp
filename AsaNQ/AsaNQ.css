@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.top img{
+    display:block;
+    margin:auto;
+    margin-top: -5%;
+}
+#InputValue{
+    font-size: 20px;
+    font-family: serif;
+}
+#InputValue2{
+    font-size: 20px;
+    font-family: serif;
+    text-align: left;
+}
+.InputAll{
+    text-align: center;
+}
+#ans{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: serif;
+    position: relative;
+    margin-left: 35%;
+}

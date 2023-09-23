@@ -20,6 +20,7 @@
     text-align: center;
 }
 .analogclock{
+    font-family: 'Georgia';
     display: block;
     margin: auto;
     position: relative;

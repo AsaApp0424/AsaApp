@@ -21,6 +21,7 @@
 }
 .analogclock{
     font-family: 'Georgia';
+    font-size: 200%;
     display: block;
     margin: auto;
     position: relative;

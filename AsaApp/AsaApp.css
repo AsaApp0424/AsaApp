@@ -4,10 +4,9 @@
     margin:auto;
 }
 .app{
-    width: 750px;
-    position: absolute;
-    margin-top: 5%;
-    margin-left: 20%;
+    display: block;
+    margin: auto;
+    width: 700px;
 }
 .app a, .app p{
     margin-bottom: 50px;

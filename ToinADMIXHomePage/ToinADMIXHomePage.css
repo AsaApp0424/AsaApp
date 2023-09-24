@@ -49,6 +49,11 @@
     border:solid 2px #bd0fe96f;
     border-radius: 10px;
 }
+.articles{
+    display: block;
+    margin: auto;
+    width: 700px;
+}
 .articles a{
     text-decoration: none;
     color: #bd0fe9;
@@ -61,17 +66,16 @@
 .articles h2{
     font-size: 250%;
     margin-top: 7%;
-    margin-left: 15%;
 }
 .articles h3{
     font-family: serif;
     font-size: 200%;
-    margin-left: 20%;
+    margin-left: 5%;
 }
 .articles p{
     font-family: serif;
     font-size: 130%;
-    margin-left: 25%;
+    margin-left: 10%;
 }
 .ending {
     font-family: serif;

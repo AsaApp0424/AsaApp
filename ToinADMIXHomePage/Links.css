@@ -40,7 +40,7 @@
 }
 #background{
     position: fixed;
-    background-color: #ffffff00;
+    background-color: #ffffff;
     width: 100%;
     height: 12%;
     font-size: 300%;
@@ -48,7 +48,6 @@
 }
 #iru{
     font-size: 1%;
-    color:#ffff;
 }
 .ending {
     display: block;

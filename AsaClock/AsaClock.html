@@ -3,12 +3,12 @@
     <head>
         <meta charset="uft-8">
         <title>AsaClock</title>
-        <link rel="stylesheet" href="https://asaapp0424.github.io/AsaApp/AsaClock/AsaClock.css">
-        <link rel="shortcut icon" href="https://asaapp0424.github.io/AsaApp/AsaClock/AsaClock_icon.png">
+        <link rel="stylesheet" href="./AsaClock.css">
+        <link rel="shortcut icon" href=".\AsaClock_icon.png">
     </head>
     <body>
-        <img src="https://asaapp0424.github.io/AsaApp/AsaClock/darkmode.png" width="100px" id="darkmode" onClick="changemode()">
-        <img src="https://asaapp0424.github.io/AsaApp/AsaClock/AsaClock_home.png" width="400px" id="top">
+        <img src=".\darkmode.png" width="100px" id="darkmode" onClick="changemode()">
+        <img src=".\AsaClock_home.png" width="400px" id="top">
         <div class="clock">
             <div class="analogclock" id="analogclock">
                 <span class="edgehour"></span>
@@ -34,8 +34,8 @@
         </div>
         <script>
             var mode = 0;
-            var modes = new Array("https://asaapp0424.github.io/AsaApp/AsaClock/brightmode.png", "https://asaapp0424.github.io/AsaApp/AsaClock/darkmode.png");
-            var tops = new Array("https://asaapp0424.github.io/AsaApp/AsaClock/AsaClock_home_dark.png", "https://asaapp0424.github.io/AsaApp/AsaClock/AsaClock_home.png");
+            var modes = new Array("brightmode.png", "darkmode.png");
+            var tops = new Array("AsaClock_home_dark.png", "AsaClock_home.png");
             function changemode(){
                 if(mode == 0){
                     mode = 1;
@@ -59,7 +59,7 @@
             function showclock(){
                 var today = new Date();
                 var year = today.getFullYear();
-                var month = today.getMonth()  + 1;
+                var month = today.getMonth() + 1;
                 var date = today.getDate();
                 var hour = today.getHours();
                 var minute = today.getMinutes();

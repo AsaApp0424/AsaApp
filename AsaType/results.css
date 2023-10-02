@@ -1,0 +1,41 @@
+@charset "utf-8";
+.tohome img{
+    margin-left: 20px;
+    position: absolute;
+}
+.menu{
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.menu img{
+    width:10%;
+    float: left;
+    margin-left: 10%;
+    position: relative;
+    margin-top: -3%;
+    font-size: 20px;
+    transition: 0.4s;
+    text-align: center;
+}
+.menu p :hover{
+    margin-top: -3.5%;
+    transition: 0.3s;
+}
+.introduction{
+    position: absolute;
+    margin-left: 20%;
+}
+.introduction h1{
+    position: relative;
+    margin-top: 20%;
+    font-size: 400%;
+    font-family:'Trebuchet MS';
+}
+.introduction p{
+    position:relative;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 120%;
+    font-family:'Trebuchet MS';
+}

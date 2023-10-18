@@ -1,4 +1,10 @@
 @charset "utf-8";
+.heml .body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-decoration: none;
+}
 .tohome{
     position: fixed;
 }
@@ -48,89 +54,7 @@
     font-size: 100%;
     margin-top: -3%;
 }
-.history, .activityplace, .members h2{
-    display: block;
-    width: 700px;
-    margin: auto;
-}
-.aboutus h2{
-    font-size: 250%;
-    margin-top: 10%;
-}
-.aboutus h3{
-    font-family: 'Trebuchet MS';
-    font-size: 200%;
-    margin-left: 5%;
-    margin-top: 5%;
-}
-.history p{
-    font-family: serif;
-    font-size: 130%;
-    margin-left: 5%;
-    margin-bottom: 30%;
-}
-.aboutus  li{
-    list-style: none;
-}
-.members img{
-    display: block;
-    margin: auto;
-    position: relative;
-    transition:1s;
-    border:solid 2px #bd0fe96f;
-    border-radius: 10px;
-}
-.members img:hover{
-    text-align: center;
-    display: block;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    transition: 1s;
-}
-.members p{
-    color: #ffffff;
-    font-family: serif;
-    display: block;
-    font-size:130%;
-    margin-left: -70%;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    margin-top: -30%;
-}
-.members h2{
-    margin-top: 10%;
-    display: block;
-    width: 700px;
-    margin: auto;
-}
-.members h3{
-    position: absolute;
-    color:#ffffff;
-}
-.activityplace h2{
-    margin-top: 30%;
-}
-.activityplace p{
-    margin-left: 5%;
-    font-family: serif;
-    font-size: 130%;
-}
-.activityplace img{
-    margin-left: 5%;
-    border:solid 2px #bd0fe96f;
-    border-radius: 10px;
-}
-.activityplace a{
-    text-decoration: none;
-    color: #bd0fe9;
-    transition: 0.4s;
-}
-.activityplace a:hover{
-    text-decoration: underline;
-    transition: 0.3s;
-}
+
 .ending {
     position: relative;
     font-family: serif;
@@ -140,11 +64,78 @@
     background-color: #bd0fe96f;
     background-size: 100%;
     height: 30%;
-    margin-top: 10%;
-    margin-left: -22%;
-    margin-right: -21%;
+    margin-left: -1%;
+    margin-bottom: -1%;
+    margin-right: -0.4%;
 }
 #iru{
     font-size: 1%;
     color:#ffff;
+}
+a{
+    text-decoration: none;
+    color: #bd0fe9;
+    transition: 0.4s;
+}
+.activityplace a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.history, .members, .activityplace{
+    display: block;
+    margin: auto;
+    width: 700px;
+}
+h2{
+    font-size: 300%;
+    margin-top: 30%;
+}
+h3{
+    position: absolute;
+    font-size : 200%;
+    width: 700px;
+    text-align: right;
+    color: #bd0fe9;
+}
+.history p, .activityplace p{
+    font-size: 150%;
+    margin-left: 10%;
+}
+.members {
+    position: relative;
+    margin-top: 50%;
+}
+.members img, .activityplace img{
+    position: relative;
+    width: 700px;
+    display: block;
+    text-align: left;
+    border:solid 5px #bd0fe96f;
+    border-radius: 70px;
+    z-index: 90;
+    transition: 1s;
+}
+.members img{
+    margin-bottom: 70%;
+}
+.members p{
+    display:block;
+    position: absolute;
+    font-size: 150%;
+    width: 700px;
+    color: #bd0fe9;
+    text-align: right;
+    z-index: 89;
+    line-height: 200%;
+    margin-top: 25%;
+}
+.members img:hover{
+    width: 500px;
+    z-index: 0;
+    transition: 1s;
+    margin-left: 0px;
+}
+.activityplace{
+    margin-top: -20%;
 }

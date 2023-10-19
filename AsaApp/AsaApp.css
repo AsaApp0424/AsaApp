@@ -1,100 +1,63 @@
 @charset "utf-8";
-.top img{
+html, body{
+    width: 700px;
+    padding: 0;
     display: block;
-    margin:auto;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+.top{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 3%;
+}
+.intro{
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Tile Neon', serif;
 }
 .app{
-    display: block;
-    margin: auto;
-    width: 700px;
-    margin-top: 2%;
-}
-.app a, .app p{
-    margin-bottom: 50px;
-}
-.app table{
-    margin-left: 15%;
-}
-table a{
-    text-decoration:none;
-    font-size:250%;
-    font-family:Tahoma;
-    transition: 0.4s;
-}
-.app table tr td img{
-    display: block;
-    margin: auto;
-}
-.app table tr td p{
-    font-size: 100%;
-    font-family: Century;
-    margin-left: 50px;
-    text-align: center;
     text-decoration: none;
-    border-radius: 30px;
+    width: 700px;
+    text-align: center;
+}
+.oneapp{
+    width: 20%;
+    float: left;
+    border: solid 2px rgba(255, 255, 255, 0);
+    border-radius: 10%;
+    margin: 1%;
+    margin-top: 5%;
+    padding: 5% 5% 0% 5%;
+    background: #8FE4FF;
     transition: 0.3s;
 }
-.app table tr td p:hover{
-    border-radius: 5px;
-    transition: 0.2s;
+.oneapp:hover{
+    background: rgba(255, 255, 255, 0.663);
+    transition: 0.3s;
 }
-.ennkyuu p{
-    color:#ffffff;
-    border: solid 2px #adadad;
-    background-color: #adadad;
+.oneapp p{
+    font-size: 150%;
+    font-family: 'Nanum Gothic', sans-serif;
 }
-.ennkyuu p:hover{
-    color: #adadad;
-    border: solid 2px #adadad;
-    background-color: #ffffff;
+#nq p{
+    color: #797979;
 }
-.denntaku p{
-    color:#ffeb55;
-    border: solid 2px #5bbdff;
-    background-color: #5bbdff;
+#denntaku p{
+    color: #43a4ff;
 }
-.denntaku p:hover{
-    color: #5bbdff;
-    border: solid 2px #5bbdff;
-    background-color: #ffffff;
-}
-.admix p{
-    color:#ffffff;
-    border: solid 2px #000000;
-    background-color: #000000;
-}
-.admix p:hover{
+#admix p{
     color: #000000;
-    border: solid 2px #000000;
-    background-color: #ffffff;
 }
-.fx p{
-    color:#ffffff;
-    border: solid 2px #b229e9;
-    background-color: #b229e9;
+#fx p{
+    color:#9f1ae6;
 }
-.fx p:hover{
-    color: #b229e9;
-    border: solid 2px #b229e9;
-    background-color: #ffffff;
-}
-.clock p{
-    color:#ffffff;
-    border: solid 2px #ff0000;
-    background-color: #ff0000;
-}
-.clock p:hover{
+#clock p{
     color: #ff0000;
-    border: solid 2px #ff0000;
-    background-color: #ffffff;
 }
-.type p{
-    color:#ffffff;
-    border: solid 2px #000000;
-    background-color: #000000;
-}
-.type p:hover{
+#type p{
     color: #000000;
-    border: solid 2px #000000;
-    background-color: #ffffff;
 }

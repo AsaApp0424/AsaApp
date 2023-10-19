@@ -3,64 +3,39 @@
     <head>
         <meta charset="utf-8">
         <title>AsaApp</title>
+        <link rel="shortcut icon" href="./AsaApp_icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital@1&family=Roboto+Slab:wght@200&family=Tilt+Neon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=DM+Serif+Display&family=Gothic+A1:wght@800&family=Josefin+Slab:wght@700&family=League+Gothic&family=Montserrat:ital@1&family=Nanum+Gothic:wght@800&family=Roboto+Slab:wght@200&family=Tilt+Neon&family=Titan+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href=".\AsaApp.css">
-        <link rel="shortcut icon" href=".\AsaApp_icon.png">
     </head>
-    <body>
+    <body style="background-color:#8FE4FF">
         <div class="top">
-            <img src=".\AsaApp_home2.png" width="400px">
+            <img src=".\AsaApp_home2.png" width="80%">
+        </div>
+        <div class="intro">
+            <h1>AsaApp makes your life "a little" happy.</h1>
         </div>
         <div class="app">
-            <table>
-                <tr>
-                    <td>
-                        <img src="../AsaNQ/AsaNQ_icon.png" width="100px">
-                    </td>
-                    <td>
-                        <a href="..\AsaNQ\AsaNQ.html"><div class="ennkyuu"><p>go to AsaNQ →</p></div></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="..\Asa電卓\Asa電卓_icon.png" width="100px">
-                    </td>
-                    <td>
-                        <a href="..\Asa電卓\Asa電卓.html"><div class="denntaku"><p>go to Asa電卓 →</p></div></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="..\ToinADMIXHomePage\ADMIX_LOGO.png" width="100px">
-                    </td>
-                    <td>
-                        <a href="../ToinADMIXHomePage\ToinADMIXHomePage.html"><div class="admix"><p>go to Admix →</p></div></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../AsaFX\AsaFX_icon.png" width="100px">
-                    </td>
-                    <td>
-                        <a href="..\AsaFX\AsaFX.html" id="fx"><div class="fx"><p>go to AsaFX →</p></div></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="..\AsaClock\AsaClock_icon.png" width="100px">
-                    </td>
-                    <td>
-                        <a href="..\AsaClock\AsaClock.html" id="clock"><div  class="clock"><p>go to AsaClock→</p></div></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="..\AsaType\AsaType_icon.png" width="100px">
-                    </td>
-                    <td>
-                        <a href="..\AsaType\AsaType.html" id="type"><div class="type"><p>go to AsaType →</p></div></a>
-                    </td>
-                </tr>
-            </table>
+            <div id="nq">
+                <a href="../AsaNQ/AsaNQ.html" class="oneapp"><img src="../AsaNQ/AsaNQ_icon.png" width="100%"><p>AsaNQ</p></a>
+            </div>
+            <div id="denntaku">
+                <a href="../Asa電卓/Asa電卓.html" class="oneapp"><img src="../Asa電卓/Asa電卓_icon.png" width="100%"><p>Asa電卓</p></a>
+            </div>
+            <div id="admix">
+                <a href="../ToinADMIXHomePage/ToinADMIXHomePage.html" class="oneapp"><img src="../ToinADMIXHomePage/ADMIX_LOGO.png" width="100%"><p>Toin ADMIX</p></a>
+            </div>
+            <div id="fx">
+                <a href="../AsaFX/AsaFX.html" class="oneapp"><img src="../AsaFX/AsaFX_icon.png" width="100%"><p>AsaFX</p></a>
+            </div>
+            <div id="clock">
+                <a href="../AsaClock/AsaClock.html" class="oneapp"><img src="../AsaClock/AsaClock_icon.png" width="100%"><p>AsaClock</p></a>
+            </div>
+            <div id="type">
+                <a href="../AsaType/AsaType.html" class="oneapp"><img src="../AsaType/AsaType_icon.png" width="100%"><p>AsaType</p></a>
+            </div>
         </div>
     </body>
 </html>

@@ -1,0 +1,65 @@
+@charset 'utf-8';
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.random{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+#home{
+    position: absolute;
+    margin: -1% auto auto 1%;
+}
+.number{
+    margin: 5% auto 0% auto;
+}
+.number p{
+    padding-top: 10%;
+    height: 40%;
+    font-size: 1000%;
+    border: solid 2px #68F113;
+    border-radius: 10px;
+    background-color: #68f11384;
+    text-align: center;
+}
+.range{
+    margin-top: -16%;
+    margin-left: 3%;
+}
+.range li{
+    list-style: none;
+    margin-bottom: 1%;
+}
+.range input{
+    background-color: #68f11384;
+    border: solid 2px #68F113;
+    border-radius: 5px;
+    font-size: 150%;
+    font-family: 'Ubuntu';
+}
+.generate input{
+    position: absolute;
+    display:none;
+}
+#show{
+    border: solid 2px #68f11300;
+    background-color: #68f11300;
+    border-radius: 10%;
+    position: absolute;
+    margin-left: 3%;
+    position: relative;
+    margin-top: 0%;
+    width: 25%;
+    font-size: 150%;
+    transition: 0.3s;
+}
+#show:hover{
+    border: solid 2px #68F113;
+    background-color: #68f11332;
+    transition: 0.3s;
+    border-radius: 10%;
+}

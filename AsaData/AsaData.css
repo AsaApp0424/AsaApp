@@ -1,0 +1,58 @@
+@charset 'utf-8';
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: linear-gradient(315deg, #0075FF, #2200ff00);
+    display: block;
+    margin: auto;
+}
+#home img{
+    position: absolute;
+    left: 1%;
+    top: 2%;
+}
+.data{
+    background-color: #ffff;
+    display: block;
+    margin: auto;
+    border: solid 2px #ffffff;
+    margin: 5% 5% auto 5%;
+    padding: 5% 5% 10% 5%;
+    border-radius: 25px;
+}
+#dropfile{
+    color: #0075FF;
+    text-align: center;
+    font-size: 250%;
+    line-height: 250%;
+}
+#back{
+    display: none;
+}
+#front{
+    font-size: 250%;
+    color: #ffffff;
+    display:block;
+    margin: auto;
+    padding: 5% 5% 5% 5%;
+    background: #0075FF;
+    border-radius: 10px;
+    transition: .3s;
+    border: solid 4px #0075FF;
+}
+#front:hover{
+    color: #0075FF;
+    background-color: #ffff;
+    transition: .3s;
+    border: solid 4px #0075FF;
+}
+#output{
+    position: absolute;
+    font-size: 500px;
+    z-index: 9999;
+    margin-top: -40%;
+}

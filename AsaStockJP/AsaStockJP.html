@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>AsaStockJP</title>
+        <link rel="stylesheet" href="./AsaStockJP.css">
+        <link rel="shortcut icon" href=".\AsaStockJP_icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Carrois+Gothic+SC&family=DM+Serif+Display&family=Gothic+A1:wght@800&family=Josefin+Slab:wght@700&family=League+Gothic&family=Montserrat:ital@1&family=Nanum+Gothic:wght@800&family=Roboto+Slab:wght@200&family=Tilt+Neon&family=Titan+One&display=swap" rel="stylesheet">
+    </head>
+    <body></body>
+        <div class="top">
+            <a href="#"><img src=".\AsaStockJP_home.png" width="6%"></a>
+        </div>
+        <div class="stock">
+            <div class="select1">
+                <select name="country" id="country">
+                    <option value="AAPL">Apple</option>
+                    <option value="japan">Microsoft</option>
+                    <option value="usa">The United States</option>
+                </select>
+            </div>
+            <div class="select2">
+                <select name="country" id="country">
+                    <option value="0.5">6month</option>
+                    <option value="1">1year</option>
+                    <option value="2">2year</option>
+                </select>
+            </div>
+            <div class="graghframe">
+                <canvas id="gragh"></canvas>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+        <script src="./AsaStockJP.js"></script>
+    </body>
+</html>

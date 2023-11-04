@@ -64,14 +64,35 @@ a{
 #nasa p{
     color: #1c1c91;
 }
+#data p{
+    color: #0075FF;
+}
+#stock p{
+    color: #FFF500;
+}
+#stockjp p{
+    color: #FFDBED;
+}
+#random p{
+    color: #68F113;
+}
 .start {
-	background: #8FE4FF;
+	background: #8fe5ff00;
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
 	z-index: 9000;
+}
+.blue {
+	background: #8FE4FF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 7777;
 }
 .start p {
 	position: fixed;
@@ -81,3 +102,23 @@ a{
 	display: none;
 	z-index: 9999;
 }
+/*
+.red {
+	background: #FF0000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.yellow {
+	background: linear-gradient(90deg, #FF0000, #FFED00);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 8888;
+}
+*/

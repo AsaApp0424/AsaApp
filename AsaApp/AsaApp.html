@@ -39,8 +39,23 @@
             <div id="nasa">
                 <a href="https://yuji-terada.github.io/NASASpaceAppsChallenge2023-Test/" class="oneapp"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1224px-NASA_logo.svg.png" width="100%"><p>AsaNASA</p></a>
             </div>
+            <div id="data">
+                <a href="../AsaData/AsaData.html" class="oneapp"><img src="../AsaData/AsaData_icon.png" width="100%"><p>AsaData</p></a>
+            </div>
+            <div id="stock">
+                <a href="../AsaStock/AsaStock.html" class="oneapp"><img src="../AsaStock/AsaStock_icon.png" width="100%"><p>AsaStock</p></a>
+            </div>
+            <div id="stockjp">
+                <a href="../AsaStockJP/AsaStockJP.html" class="oneapp"><img src="../AsaStockJP/AsaStockJP_icon.png" width="100%"><p>AsaStock</p></a>
+            </div>
+            <div id="random">
+                <a href="../AsaRandom/AsaRandom.html" class="oneapp"><img src="../AsaRandom/AsaRandom_icon.png" width="100%"><p>AsaRandom</p></a>
+            </div>
         </div>
         <div class="start">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="blue"></div>
             <p><img src="./AsaApp_icon.png" width="100%"></p>
         </div>
         <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
@@ -53,6 +68,28 @@
 	            	$('.start').fadeOut(700);
 	            },3000);
             });
+            /*
+            $(function() {
+	            setTimeout(function(){
+	            	$('.red').fadeOut(1000);
+	            },500);
+                setTimeout(function(){
+	            	$('.yellow').fadeIn(1000);
+	            },500);
+	            setTimeout(function(){
+	            	$('.start p').fadeIn(1000);
+	            },2000);
+	            setTimeout(function(){
+	            	$('.yellow').fadeOut(1000);
+	            },3500);
+                setTimeout(function(){
+	            	$('.blue').fadeIn(1000);
+	            },3500);
+	            setTimeout(function(){
+	            	$('.start').fadeOut(1000);
+	            },5500);
+            });
+            */
         </script>
     </body>
 </html>

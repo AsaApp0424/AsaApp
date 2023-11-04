@@ -6,7 +6,7 @@ html{
     padding:0;
 }
 body{
-    background: linear-gradient(0deg, #b300ff58, #f29bff00);
+    background: linear-gradient(0deg, #ffff006e, #f29bff00);
     display: block;
     margin: auto;
 }
@@ -15,14 +15,25 @@ body{
     top: 2%;
     left: 1%;
 }
-h1{
-    font-size: 300%;
+.stock select{
+    font-size: 150%;
+    float: left;
+    margin: -1% 1% 1% 1%;
+    font-family: 'Bebas Neue';
     text-align: center;
+    transition: 0.3s;
+    border: solid 2px #ffff003d;
+    border-radius: 10px;
+    background-color: #ffff003d;
+}
+.select1{
+    margin-left: 10%;
 }
 .graghframe{
     width: 70%;
     display: block;
-    margin: 2% auto auto auto;
+    bottom: 0%;
+    margin: 3% auto auto auto;
     border: solid 2px #ffff;
     background-color: #ffffff93;
     padding:1% 2% 2% 2%;

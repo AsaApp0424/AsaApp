@@ -8,7 +8,7 @@ var list = [];
 
 show.addEventListener("click", randomshow);
 generate.addEventListener("click", randomgenerate);
-/*
+
 function random(){
     var min = mintext.value;
     var max = maxtext.value;
@@ -19,9 +19,9 @@ function random(){
     }else{
         randomnumber.innerText = random;
     }
-}*/
+}
 
-
+/*
 function randomgenerate(){
     min = mintext.value;
     max = maxtext.value;
@@ -37,4 +37,4 @@ function randomshow(){
     index = Math.round(index);
     max = max - 1;
     randomnumber.innerText = list[0];
-}
+}*/

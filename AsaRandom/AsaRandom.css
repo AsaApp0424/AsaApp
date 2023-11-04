@@ -21,9 +21,9 @@ html{
     padding-top: 10%;
     height: 40%;
     font-size: 1000%;
-    border: solid 2px #68F113;
+    border: solid 2px #31BB00;
     border-radius: 10px;
-    background-color: #68f11384;
+    background-color: #32bb0079;
     text-align: center;
 }
 .range{
@@ -35,8 +35,8 @@ html{
     margin-bottom: 1%;
 }
 .range input{
-    background-color: #68f11384;
-    border: solid 2px #68F113;
+    background-color: #32bb0079;
+    border: solid 2px #31BB00;
     border-radius: 5px;
     font-size: 150%;
     font-family: 'Ubuntu';
@@ -58,8 +58,8 @@ html{
     transition: 0.3s;
 }
 #show:hover{
-    border: solid 2px #68F113;
-    background-color: #68f11332;
+    border: solid 2px #31BB00;
+    background-color: #32bb004d;
     transition: 0.3s;
     border-radius: 10%;
 }

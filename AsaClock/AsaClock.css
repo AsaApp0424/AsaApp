@@ -133,3 +133,23 @@
     background-color: rgb(255, 0, 0);
     border-radius: 50%;
 }
+
+@media screen and (max-width: 1000px) {
+    body{
+        width: 100%;
+    }
+    #darkmode{
+        margin-top: 30%;
+        margin-left: 0%;
+        width: 20%;
+    }
+    .clock{
+        width: 100%;
+    }
+    #top{
+        width: 100%;
+    }
+    .analogclock{
+        margin-top: 50%;
+    }
+}

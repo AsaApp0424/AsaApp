@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width" />
         <title>AsaClock</title>
         <link rel="stylesheet" href="./AsaClock.css">
         <link rel="shortcut icon" href=".\AsaClock_icon.png">
@@ -72,7 +73,7 @@
                 var edgehour = document.getElementsByClassName('edgehour')[0];
                 var edgeminute = document.getElementsByClassName('edgeminute')[0];
                 var edgesecond = document.getElementsByClassName('edgesecond')[0];
-                var digitaltime = "日付 : " + year + "年" + month + "月" + date + "日&nbsp;&nbsp;&nbsp;&nbsp;時刻 : " + hour + "時" + minute + "分" + second + "秒";
+                var digitaltime = "日付 : " + year + "年" + month + "月" + date + "日\r\n時刻 : " + hour + "時" + minute + "分" + second + "秒";
 
                 edgehour.style.setProperty('transform', `rotate(${deghour}deg)`);
                 edgeminute.style.setProperty('transform', `rotate(${degminute}deg)`);

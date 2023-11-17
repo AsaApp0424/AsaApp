@@ -122,3 +122,29 @@ a{
 	z-index: 8888;
 }
 */
+
+@media screen and (max-width: 900px) {
+    body{
+        width: 100%;
+    }
+    .app{
+        text-decoration: none;
+        width: 100%;
+    }
+    .oneapp{
+        width: 50%;
+        margin-left: 15%;
+    }
+    .oneapp:hover{
+        background: rgba(255, 255, 255, 0.663);
+        transition: 0.3s;
+    }
+    .oneapp p{
+        font-size: 200%;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .oneapp:hover{
+        background: #8FE4FF;
+        transition: 0.3s;
+    }
+}

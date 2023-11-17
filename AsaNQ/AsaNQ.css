@@ -3,7 +3,7 @@
 .top img{
     display:block;
     margin:auto;
-    margin-top: -5%;
+    margin-top: 5%;
 }
 #InputValue{
     font-size: 20px;
@@ -23,4 +23,21 @@
     font-family: serif;
     position: relative;
     margin-left: 35%;
+}
+
+@media screen and (max-width: 1000px) {
+    .top img{
+        width: 100%;
+        margin-top: 10%;
+    }
+    #InputValue{
+        margin-top: 10%;
+        width: 80%;
+    }
+    #InputValue2{
+        width: 75%;
+    }
+    #ans{
+        margin-left: 20%;
+    }
 }

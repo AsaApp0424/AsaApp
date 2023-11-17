@@ -136,7 +136,7 @@ a{
     }
     .oneapp{
         width: 40%;
-        margin-left: 20%;
+        margin-left: 23%;
     }
     .oneapp:hover{
         background: rgba(255, 255, 255, 0.663);
@@ -151,7 +151,7 @@ a{
         transition: 0.3s;
     }
     .start p {
-        width: 100%;
+        width: 80%;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);

@@ -127,12 +127,15 @@ a{
     body{
         width: 100%;
     }
+    .top{
+        margin-top: 5%;
+    }
     .app{
         text-decoration: none;
         width: 100%;
     }
     .oneapp{
-        width: 50%;
+        width: 40%;
         margin-left: 20%;
     }
     .oneapp:hover{
@@ -146,5 +149,11 @@ a{
     .oneapp:hover{
         background: #8FE4FF;
         transition: 0.3s;
+    }
+    .start p {
+        width: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }

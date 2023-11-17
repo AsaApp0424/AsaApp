@@ -144,12 +144,21 @@
         width: 20%;
     }
     .clock{
+        position: relative;
+        display: block;
+        margin: auto;
         width: 100%;
+        margin-top: -10%;
     }
     #top{
         width: 100%;
+        text-align: center;
     }
     .analogclock{
         margin-top: 50%;
+    }
+    .digitalclock p{
+        font-size: 250%;
+        text-align: center;
     }
 }

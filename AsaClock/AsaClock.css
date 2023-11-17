@@ -139,7 +139,7 @@
         width: 100%;
     }
     #darkmode{
-        margin-top: 30%;
+        margin-top: 10%;
         margin-left: 0%;
         width: 20%;
     }
@@ -148,12 +148,12 @@
         display: block;
         margin: auto;
         width: 100%;
-        margin-top: -10%;
+        margin-top: -20%;
     }
     #top{
-        width: 100%;
-        text-align: center;
-        margin-left: 1%;
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 200px;
     }
     .analogclock{
         margin-top: 50%;

@@ -153,6 +153,7 @@
     #top{
         width: 100%;
         text-align: center;
+        margin-left: 1%;
     }
     .analogclock{
         margin-top: 50%;

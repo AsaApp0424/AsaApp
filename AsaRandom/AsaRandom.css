@@ -19,20 +19,22 @@ html{
 }
 .number p{
     padding-top: 10%;
-    height: 40%;
-    font-size: 1000%;
+    padding-bottom: 10%;
+    font-size: 500%;
     border: solid 2px #31BB00;
     border-radius: 10px;
     background-color: #32bb0079;
     text-align: center;
 }
 .range{
-    margin-top: -16%;
-    margin-left: 3%;
+    position: relative;
+    margin-top: -5%;
+    text-align: center;
 }
 .range li{
     list-style: none;
     margin-bottom: 1%;
+    font-size: 150%;
 }
 .range input{
     background-color: #32bb0079;
@@ -49,17 +51,45 @@ html{
     border: solid 2px #68f11300;
     background-color: #68f11300;
     border-radius: 10%;
-    position: absolute;
-    margin-left: 3%;
-    position: relative;
+    margin-left: 35%;
     margin-top: 0%;
-    width: 25%;
+    position: relative;
+    width: 30%;
     font-size: 150%;
     transition: 0.3s;
 }
+/*
 #show:hover{
     border: solid 2px #31BB00;
     background-color: #32bb004d;
     transition: 0.3s;
     border-radius: 10%;
+}
+*/
+@media screen and (max-width: 700px) {
+    .random{
+        width: 100%;
+    }
+    #home{
+        margin-left: 5%;
+        margin-top: 0%;
+        width: 200px;
+    }
+    .number{
+        padding-top: 5%;
+        width: 100%;
+    }
+    .range{
+        position: relative;
+        margin-top: 0%;
+        width: 100%;
+    }
+    #show{
+        position: relative;
+        display: block;
+        margin: auto;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 0%;
+    }
 }

@@ -1,8 +1,7 @@
 @charset "utf-8";
-img{
+#home{
     display:block;
     margin:auto;
-    margin-top: -7%;
 }
 #answer{
     font-size: 80px;
@@ -402,4 +401,12 @@ img{
     background:  #6dc0ff;
     border-bottom: #56a0d8 5px solid;
     border-right: #56a0d8 5px solid;
+}
+
+@media screen and (max-width: 700px) {
+    #home{
+        width: 200px;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
 }

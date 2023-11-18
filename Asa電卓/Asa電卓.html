@@ -11,7 +11,7 @@
         <img src=".\Asa電卓_Home.png" width="400px" id="home">
         <p id="answer"></p>
 
-
+        <div class="button">
         <div id="numbers0">
             <li id="parenthesesL" onclick="parenthesesL()">(</li>
             <li id="parenthsesR" onclick="parenthesesR()">)</li>
@@ -42,7 +42,7 @@
             <li id="enter" onclick="enter()">enter</li>
             <li id="plus" onclick="plus()">+</li>
         </div>
-
+        </div>
 
         <script>
             var nya = "";
@@ -114,7 +114,7 @@
 
             }
             function DevidedBy(){
-                if(symbol  == 0){
+                if(symbol  == 0 && nya != ""){
                     answer.innerText = answer.innerText + "÷";
                     nya = nya + "/";
                     symbol = 1;
@@ -123,7 +123,7 @@
                 }
             }
             function times(){
-                if(symbol == 0){
+                if(symbol == 0 && nya != ""){
                     answer.innerText = answer.innerText + "×";
                     nya = nya + "*";
                     symbol = 1;
@@ -136,7 +136,7 @@
                 nya = nya + "-";
             }
             function plus(){
-                if(symbol == 0){
+                if(symbol == 0 && nya != ""){
                     answer.innerText = answer.innerText + "+";
                     nya = nya + "+";
                     symbol = 1;

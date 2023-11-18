@@ -6,13 +6,12 @@ img{
 }
 #answer{
     font-size: 80px;
-    border: #000000 2px solid;
+    border: #ffffff 2px solid;
     text-align: right;
     word-break:break-all;
     position: absolute;
     bottom: 330px;
     right: 5px;
-    width: 1000px;
 }
 #numbers0{
     text-decoration: none;
@@ -59,7 +58,7 @@ img{
 #parenthesesL{
     font-size: 40px;
     width: 70px;
-    height: 70px;
+    height:70px;
     text-align: center;
     background:  #93d0ff;
     border-bottom: #7eb6e1 5px solid;

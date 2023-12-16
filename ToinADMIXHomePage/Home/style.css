@@ -1,0 +1,226 @@
+@charset "utf-8";
+html{
+    margin: 0;
+    padding: 0;
+}
+.tohome{
+    position: fixed;
+}
+.tohome img{
+    margin-top: 0px;
+    margin-left: 3%;
+}
+.menu{
+    margin-top: 0px;
+    width: 70%;
+    margin-left: 17%;
+    display: block;
+    position: fixed;
+}
+.menu a{
+    color: #bd0fe9;
+    float:left;
+    width: 19%;
+    border-right: solid 1px #000000;
+    border-left: solid 1px #000000;
+    transition: 0.4s;
+    text-align: center;
+    font-family: Verdana;
+    text-decoration: none;
+    background-color: #ffffff00;
+}
+.menu a:hover{
+    color:#ffffff;
+    background-color: #bd0fe96f;
+    transition: 0.3s;
+}
+#background{
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    height: 102px;
+    font-size: 100%;
+    margin-top: -3%;
+}
+
+#admix_home{
+    text-align: center;
+    margin-top: 50px;
+}
+/*
+.frame{
+    position: relative;
+    overflow: hidden;
+}
+.admixes{
+    text-align: center;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#photo1{
+    background-image: url('./4人写ってた.jpg');
+    animation: slide-animation-01 24s infinite;
+}
+#photo2{
+    background-image: url('./aftertoinnode.JPG');
+    animation: slide-animation-02 24s infinite;
+}
+@keyframes slide-animation-01 {
+    0% {opacity: 1; transform: scale(1.0);}
+    30% {opacity: 1;}
+    40% {opacity: 0; transform: scale(1.15);}
+    90% {opacity: 0}
+   100% {opacity: 1; transform: scale(1.0);}
+   }
+   @keyframes slide-animation-02 {
+    0% {opacity: 0;}
+    30% {opacity: 0; transform: scale(1.1);}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {opacity: 0; transform: scale(1.0);}
+   100% {opacity: 0;}
+   }
+*/
+
+
+
+
+
+.frame{
+    border:solid 5px #bd0fe96f;
+    border-radius: 70px;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+   }
+   .img-01, .img-02, .img-03{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   .img-01{
+    background-image: url('./4人写ってた.jpg');
+    animation: slide-animation-01 30s infinite;
+   }
+   .img-02{
+    background-image: url('./sunandrobot.JPG');
+    animation: slide-animation-02 30s infinite;
+   }
+   .img-03{
+    background-image: url('./aftertoinnode.JPG');
+    animation: slide-animation-03 30s infinite;
+   }
+   @keyframes slide-animation-01 {
+    0% {opacity: 1;}
+    10% {opacity: 1;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    70% {opacity: 1;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+   @keyframes slide-animation-02 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 1;}
+    30% {opacity: 1;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+   }
+   @keyframes slide-animation-03 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 1;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100%{opacity: 1;}
+    110%{opacity: 1;}
+   }
+
+
+
+
+
+.articles{
+    display: block;
+    margin: auto;
+    width: 700px;
+}
+.articles a{
+    text-decoration: none;
+    color: #bd0fe9;
+    transition: 0.4s;
+}
+.articles a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.articles h2{
+    font-size: 250%;
+    margin-top: 7%;
+}
+.articles h3{
+    font-family: serif;
+    font-size: 200%;
+    margin-left: 5%;
+}
+.articles p{
+    font-family: serif;
+    font-size: 130%;
+    margin-left: 10%;
+}
+.ending {
+    position: relative;
+    font-family: serif;
+    color: #ffff;
+    font-size: 100%;
+    text-align: center;
+    background-color: #bd0fe96f;
+    background-size: 100%;
+    height: 30%;
+    margin-left: -1%;
+    margin-bottom: -1%;
+    margin-right: -0.4%;
+}
+#iru{
+    font-size: 1%;
+    color: #ffff;
+}
+.start {
+	background: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+}

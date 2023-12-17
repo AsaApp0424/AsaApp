@@ -98,8 +98,13 @@ html{
     height: 850px;
     overflow: hidden;
     margin-left: -0.5%;
-   }
-   .img-01, .img-02, .img-03{
+}
+@media screen and (max-width: 700px) {
+    .frame{
+        height: 600px;
+    }
+}
+.img-01, .img-02, .img-03{
     position: absolute;
     top:0;
     left:0;
@@ -107,20 +112,20 @@ html{
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-   }
-   .img-01{
+}
+.img-01{
     background-image: url('./4人写ってた.jpg');
     animation: slide-animation-01 30s infinite;
-   }
-   .img-02{
+}
+.img-02{
     background-image: url('./sunandrobot.JPG');
     animation: slide-animation-02 30s infinite;
-   }
-   .img-03{
+}
+.img-03{
     background-image: url('./aftertoinnode.JPG');
     animation: slide-animation-03 30s infinite;
-   }
-   @keyframes slide-animation-01 {
+}
+@keyframes slide-animation-01 {
     0% {opacity: 1;}
     10% {opacity: 1;}
     20% {opacity: 0;}
@@ -133,7 +138,7 @@ html{
     90% {opacity: 0;}
     100% {opacity: 0;}
 }
-   @keyframes slide-animation-02 {
+@keyframes slide-animation-02 {
     0% {opacity: 0;}
     10% {opacity: 0;}
     20% {opacity: 1;}
@@ -145,8 +150,8 @@ html{
     80% {opacity: 1;}
     90% {opacity: 1;}
     100% {opacity: 0;}
-   }
-   @keyframes slide-animation-03 {
+}
+@keyframes slide-animation-03 {
     0% {opacity: 0;}
     10% {opacity: 0;}
     20% {opacity: 0;}
@@ -159,7 +164,7 @@ html{
     90% {opacity: 0;}
     100%{opacity: 1;}
     110%{opacity: 1;}
-   }
+}
 
 
 

@@ -101,7 +101,7 @@ html{
 }
 @media screen and (max-width: 700px) {
     .frame{
-        height: 600px;
+        height: 400px;
     }
 }
 .img-01, .img-02, .img-03{

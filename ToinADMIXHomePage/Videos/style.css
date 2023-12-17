@@ -44,10 +44,11 @@ p, h1, h2, h3{
 #background{
     position: fixed;
     background-color: #ffffff;
-    width: 100%;
+    width: 102%;
     height: 102px;
     font-size: 100%;
     margin-top: -3%;
+    margin-left: -1%;
 }
 .videos{
     width: 70%;

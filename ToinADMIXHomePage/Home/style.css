@@ -99,7 +99,7 @@ html{
     overflow: hidden;
     margin-left: -0.5%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
     .frame{
         height: 400px;
     }

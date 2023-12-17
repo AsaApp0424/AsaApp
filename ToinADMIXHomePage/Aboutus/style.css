@@ -84,11 +84,13 @@ a{
 }
 
 .history, .members, .activityplace{
+    font-family: Serif;
     display: block;
     margin: auto;
     width: 700px;
 }
 h2{
+    font-family: Verdana;
     font-size: 300%;
     margin-top: 15%;
 }

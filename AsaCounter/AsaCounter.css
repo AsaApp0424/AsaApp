@@ -3,12 +3,9 @@
     display: block;
     margin: auto;
     margin-top: 1%;
+    width: 20%;
 }
-/*.counter{
-    width: 700px;
-    display: block;
-    margin: auto;
-}*/
+
 .number{
     margin-left: 25%;
     width: 25%;
@@ -17,6 +14,7 @@
     margin-top: -5%;
     position: absolute;
 }
+
 .number p{
     background-color: #c300ff84;
     border: solid 1px #C400FF;
@@ -51,4 +49,47 @@
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
+}
+@media screen and (max-width: 1000px) {
+    #home{
+        width: 70%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .number{
+        width: 100%;
+        margin-top: -10%;
+        margin-left: 0%;
+        position: absolute;
+    }
+    .button{
+        float: clear;
+        margin-left: -10%;
+        position: relative;
+    }
+    #sumbutton{
+        margin-top: 400%;
+        margin-left: 250%;
+        width: 200%;
+        position: absolute;
+    }
+    #recordbutton{
+        margin-top: 400%;
+        margin-left: 650%;
+        width: 200%;
+        position: absolute;
+    }
+    .record li{
+        position: relative;
+        float: left;
+        list-style: none;
+        width: 50%;
+        margin-left: 0%;
+        background-color: #c300ff84;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 50px;
+        margin-top: 75%;
+        margin-bottom: -70%;
+    }
 }

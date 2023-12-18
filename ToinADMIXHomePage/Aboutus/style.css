@@ -12,6 +12,11 @@
     margin-top: 0px;
     margin-left: 3%;
 }
+#dxandex{
+    border:solid 5px #bd0fe96f;
+    border-radius: 70px;
+    margin: 5% auto 5% auto;
+}
 .menu{
     margin-top: 0px;
     width: 70%;
@@ -107,7 +112,7 @@ h3{
 }
 .members {
     position: relative;
-    margin-top: 50%;
+    margin-top: 30%;
 }
 .members img, .activityplace img{
     position: relative;
@@ -139,6 +144,10 @@ h3{
     z-index: 0;
     transition: 1s;
     margin-left: 0px;
+}
+#asahi, #haruku, #hiromiti{
+    width: 700px;
+    height: 1200px;
 }
 .activityplace{
     margin-top: 0%;

@@ -84,10 +84,6 @@ html{
    }
 */
 
-
-
-
-
 .frame{
     margin: 0;
     padding: 0;
@@ -104,12 +100,12 @@ html{
         height: 600px;
     }
 }
-.img-01, .img-02, .img-03{
+.img-01, .img-02, .img-03, .img-04, .img-05{
     position: absolute;
     top:0;
     left:0;
-    width: 100%;
     height: 100%;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -118,12 +114,20 @@ html{
     animation: slide-animation-01 30s infinite;
 }
 .img-02{
-    background-image: url('./sunandrobot.JPG');
+    background-image: url('./afteromoshiro.JPG');
     animation: slide-animation-02 30s infinite;
 }
 .img-03{
-    background-image: url('./aftertoinnode.JPG');
+    background-image: url('./sunandrobot.JPG');
     animation: slide-animation-03 30s infinite;
+}
+.img-04{
+    background-image: url('./aftertoinnode.JPG');
+    animation: slide-animation-04 30s infinite;
+}
+.img-05{
+    background-image: url('./robotinthedark.JPG');
+    animation: slide-animation-05 30s infinite;
 }
 @keyframes slide-animation-01 {
     0% {opacity: 1;}
@@ -132,11 +136,11 @@ html{
     30% {opacity: 0;}
     40% {opacity: 0;}
     50% {opacity: 0;}
-    60% {opacity: 1;}
-    70% {opacity: 1;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
     80% {opacity: 0;}
     90% {opacity: 0;}
-    100% {opacity: 0;}
+    100% {opacity: 1;}
 }
 @keyframes slide-animation-02 {
     0% {opacity: 0;}
@@ -147,8 +151,8 @@ html{
     50% {opacity: 0;}
     60% {opacity: 0;}
     70% {opacity: 0;}
-    80% {opacity: 1;}
-    90% {opacity: 1;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
     100% {opacity: 0;}
 }
 @keyframes slide-animation-03 {
@@ -162,8 +166,33 @@ html{
     70% {opacity: 0;}
     80% {opacity: 0;}
     90% {opacity: 0;}
-    100%{opacity: 1;}
-    110%{opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-04 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    70% {opacity: 1;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-05 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 
@@ -197,6 +226,11 @@ html{
     font-family: serif;
     font-size: 130%;
     margin-left: 10%;
+}
+.whatisrcj img, .whatdowedo img{
+    border:solid 5px #bd0fe96f;
+    border-radius: 70px;
+    margin: 5% auto 5% auto;
 }
 .ending {
     position: relative;

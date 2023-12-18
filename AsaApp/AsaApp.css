@@ -76,6 +76,9 @@ a{
 #random p{
     color: #31BB00;
 }
+#counter p{
+    color: #C400FF;
+}
 .start {
 	background: #8fe5ff00;
 	position: fixed;

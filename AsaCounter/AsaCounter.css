@@ -1,0 +1,54 @@
+@charset 'utf-8';
+#home{
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+}
+/*.counter{
+    width: 700px;
+    display: block;
+    margin: auto;
+}*/
+.number{
+    margin-left: 25%;
+    width: 25%;
+    text-align: center;
+    font-size: 150px;
+    margin-top: -5%;
+    position: absolute;
+}
+.number p{
+    background-color: #c300ff84;
+    border: solid 1px #C400FF;
+    border-radius: 50px;
+}
+.button{
+    float: left;
+    margin-left: 50%;
+    font-size: 70px;
+    position: absolute;
+    width: 10%;
+    text-align: center;
+    color: #c300ff84;
+    margin-top: 1%;
+}
+#sumbutton{
+    position: absolute;
+    margin-top: 60%;
+}
+#recordbutton{
+    position: absolute;
+    margin-top: 60%;
+    margin-left: 130%;
+}
+.record li{
+    float: left;
+    list-style: none;
+    width: 10%;
+    margin-left: 5%;
+    margin-top: 30%;
+    background-color: #c300ff84;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+}

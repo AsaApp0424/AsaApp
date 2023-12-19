@@ -79,6 +79,9 @@ a{
 #counter p{
     color: #C400FF;
 }
+#news p{
+    color: #5AABFF;
+}
 .start {
 	background: #8fe5ff00;
 	position: fixed;

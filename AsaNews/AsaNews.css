@@ -1,0 +1,47 @@
+@charset 'utf-8';
+html{
+    margin: 0;
+    padding: 0;
+}
+#home{
+    position: absolute;
+    margin: 1% auto auto 1%;
+}
+.titles{
+    margin-top: 0%;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    font-size: 50px;
+    font-family: "Bebas Neue";
+}
+.pictures{
+    width: 100%;
+}
+
+
+.pic1{
+    background-image: url('');
+    animation: slide-animation-01 30s infinite;
+}
+#pyconfig{
+    color:#5aaaff78;
+    display: none;
+}
+
+
+
+
+@keyframes slide-animation-01 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>AsaNews</title>
+        <link rel="stylesheet" href="./AsaNews.css">
+        <link rel="shortcut icon" href="./AsaNews_icon.png">
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Carrois+Gothic+SC&family=DM+Serif+Display&family=Gothic+A1:wght@800&family=Josefin+Slab:wght@700&family=League+Gothic&family=Montserrat:ital@1&family=Nanum+Gothic:wght@800&family=Roboto+Slab:wght@200&family=Tilt+Neon&family=Titan+One&family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color:#5aaaff78">
+        <img src="./AsaNews_home.png" width="7%" id="home">
+        <div class="titles">
+            <p id="title1">im real slim shady</p>
+            <p class="title2"></p>
+            <p class="title3"></p>
+            <p class="title4"></p>
+            <p class="title5"></p>
+            <p class="title6"></p>
+            <p class="title7"></p>
+            <p class="title8"></p>
+            <p class="title9"></p>
+            <p class="title10"></p>
+        </div>
+        <div class="pictures">
+            <div class="pic1"><img src="./AsaNews_home.png" width="100%"></div>
+            <div class="pic2"></div>
+            <div class="pic3"></div>
+            <div class="pic4"></div>
+            <div class="pic5"></div>
+            <div class="pic6"></div>
+            <div class="pic7"></div>
+            <div class="pic8"></div>
+            <div class="pic9"></div>
+            <div class="pic10"></div>
+        </div>
+    <py-config id="pyconfig">
+        packages = ["requests", "pyodide-http"]
+    </py-config>
+    <py-script>
+        import requests
+        import pyodide_http
+
+        pyodide_http.patch_all()  # Requestsにパッチをあてる
+        response = requests.get("https://swapi.dev/api/")
+        data = response.json()
+        display(f"{data['title']}", target="title1" ,append=False)
+    </py-script>
+    <!--<py-script>
+        import requests
+        display("hello")
+    </py-script>
+    <py-script>
+        from bs4 import BeautifulSoup
+    </py-script>-->
+    </body>
+</html>

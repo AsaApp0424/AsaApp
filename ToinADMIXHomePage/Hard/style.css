@@ -120,7 +120,7 @@ threedmodel a:hover{
     position: fixed;
     z-index: 99999;
     cursor: pointer;
-    width: 80px;
+    width: 200px;
     height: 50px;
     margin: 0% auto auto 95%;
 }
@@ -132,16 +132,17 @@ threedmodel a:hover{
     border-radius: 2px;
     background-color: #bd0fe9;
     width:50%;
+    margin-top: 10%;
     margin-left: -60%;
 }
 .open span:nth-of-type(1){
-    top: 15px;
+    top: 10px;
 }
 .open span:nth-of-type(2){
-    top: 23px;
+    top: 35px;
 }
 .open span:nth-of-type(3){
-    top: 31px;
+    top: 60px;
 }
 .open.active span:nth-of-type(1){
     top: 18px;
@@ -223,7 +224,11 @@ nav ul li a{
         display: none;
     }
     #home{
-        margin-top: 5%;
+        margin-top: 15%;
+    }
+    .tohome img{
+        width: 30%;
+        margin-top: 3%;
     }
 }
 @media screen and (min-width: 1000px) {

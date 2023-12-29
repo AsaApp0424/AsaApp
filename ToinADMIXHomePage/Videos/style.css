@@ -104,6 +104,7 @@ p, h3, h2{
 }
 #iru{
     font-size: 1%;
+    color:#ffff;
 }
 .open{
     position: fixed;
@@ -205,6 +206,12 @@ nav ul li a{
 }
 @media screen and (max-width: 1000px) {
     .menu{
+        display: none;
+    }
+    .videos{
+        width: 100%;
+    }
+    #background{
         display: none;
     }
 }

@@ -255,6 +255,12 @@ nav ul li a{
     .menu{
         display: none;
     }
+    #background{
+        display: none;
+    }
+    #dxandex{
+        margin-top: 5%;
+    }
 }
 @media screen and (min-width: 1000px) {
     .open{

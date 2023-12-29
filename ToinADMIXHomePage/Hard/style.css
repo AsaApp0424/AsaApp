@@ -55,6 +55,7 @@
 }
 #iru{
     font-size: 1%;
+    color: #ffff;
 }
 #home{
     width: 101%;
@@ -216,6 +217,12 @@ nav ul li a{
 @media screen and (max-width: 1000px) {
     .menu{
         display: none;
+    }
+    #background{
+        display: none;
+    }
+    #home{
+        margin-top: 5%;
     }
 }
 @media screen and (min-width: 1000px) {

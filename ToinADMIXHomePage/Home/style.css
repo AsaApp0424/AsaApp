@@ -99,6 +99,9 @@ html{
     .frame{
         height: 600px;
     }
+    #background{
+        display: none;
+    }
     .menu{
         display: none;
     }

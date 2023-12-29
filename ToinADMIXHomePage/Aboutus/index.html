@@ -5,6 +5,8 @@
         <title>About us</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="shortcut icon" href="../Home/ADMIX_LOGO.png">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js'></script>
+        <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js'></script>
     </head>
     <body>
         <div class="tohome" style="z-index:200">
@@ -22,6 +24,18 @@
         <div id="background" style="z-index:100"></div>
         <p id="iru">a</p>
         </div>
+        <div class="open"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+            <div class="g-nav-list">
+                <ul>
+                    <li><a href="../Aboutus" id="thispage">About us</a></li>
+                    <li><a href="../Soft/">Soft</a></li>
+                    <li><a href="../Hard/">Hard</a></li>
+                    <li><a href="../Videos/">Videos</a></li>
+                    <li><a href="../Links/">Links</a></li>
+                </ul>
+            </div>
+        </nav>
         <img src="historyoftoinadmix.JPG" width="100%" id="dxandex">
         <div class="aboutus">
             <div class="history">
@@ -70,6 +84,17 @@
                 <br>
             </div>
         </div>
-
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/5-1-11.js"></script>
+        <script>
+            $(".open").click(function() {
+                $(this).toggleClass('active');
+                $("#g-nav").toggleClass('panelactive');
+            });
+            $("#g-nav a").click(function(){
+                $(".open").removeClass('active');
+                $("#g-nav").removeClass('panelactive');
+            })
+        </script>
     </body>
 </html>

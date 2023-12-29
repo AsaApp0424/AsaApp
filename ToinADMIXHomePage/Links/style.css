@@ -2,8 +2,10 @@
 li{
     list-style: none;
 }
-a{
-    text-decoration: none;
+.links{
+    width: 700px;
+    display: block;
+    margin: auto;
 }
 .tohome{
     position: fixed;
@@ -56,6 +58,38 @@ a{
 #iru{
     font-size: 1%;
 }
+#parts{
+    width: 101%;
+    border:solid 5px #bd0fe96f;
+    margin: 2% auto 5% -0.7%;
+}
+.links a{
+    text-decoration: none;
+    color: #bd0fe9;
+    transition: 0.4s;
+}
+.links a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.links h1{
+    font-size: 250%;
+    margin-top: 7%;
+}
+.links h2{
+    font-family: serif;
+    font-size: 200%;
+    margin-left: 5%;
+}
+.links p{
+    font-family: Verdana;
+    font-size: 130%;
+    margin-left: 10%;
+}
+.links img{
+    margin-bottom: 15%;
+    margin-left: 10%;
+}
 .ending {
     position: relative;
     font-family: serif;
@@ -68,5 +102,5 @@ a{
     margin-left: -1%;
     margin-bottom: -1%;
     margin-right: -0.4%;
-    margin-top: 100%;
+    margin-top: 0%;
 }

@@ -6,6 +6,11 @@
     margin-top: 0px;
     margin-left: 3%;
 }
+.hard{
+    width: 700px;
+    display: block;
+    margin: auto;
+}
 .menu{
     margin-top: 0px;
     width: 70%;
@@ -51,6 +56,51 @@
 #iru{
     font-size: 1%;
 }
+#home{
+    width: 101%;
+    border:solid 5px #bd0fe96f;
+    margin: 2% auto 5% -0.7%;
+}
+.hard a{
+    text-decoration: none;
+    color: #bd0fe9;
+    transition: 0.4s;
+}
+.hard a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+threedmodel a:hover{
+    text-decoration: underline;
+}
+.threedmodel h1{
+    font-size: 250%;
+    margin-left: 0%;
+    color: #bd0fe9;
+    font-family: Verdana;
+    margin-top: -3%;
+    margin-bottom: 10%;
+}
+.hard h1{
+    font-size: 250%;
+    margin-top: 7%;
+}
+.hard h2{
+    font-family: serif;
+    font-size: 200%;
+    margin-left: 5%;
+}
+.hard p{
+    font-family: serif;
+    font-size: 130%;
+    margin-left: 10%;
+    margin-bottom: 15%;
+}
+.hard img{
+    border:solid 5px #bd0fe96f;
+    border-radius: 70px;
+    margin-bottom: 15%;
+}
 .ending {
     position: relative;
     font-family: serif;
@@ -63,5 +113,5 @@
     margin-left: -1%;
     margin-bottom: -1%;
     margin-right: -0.4%;
-    margin-top: 100%;
+    margin-top: 0%;
 }

@@ -13,9 +13,9 @@
     margin-left: 3%;
 }
 #dxandex{
+    width: 101%;
     border:solid 5px #bd0fe96f;
-    border-radius: 70px;
-    margin: 5% auto 5% auto;
+    margin: 2% auto 5% -0.7%;
 }
 .menu{
     margin-top: 0px;
@@ -144,6 +144,7 @@ h3{
     z-index: 0;
     transition: 1s;
     margin-left: 0px;
+    border-radius: 0;
 }
 #asahi, #haruku, #hiromiti{
     width: 700px;

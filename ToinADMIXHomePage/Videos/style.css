@@ -54,11 +54,9 @@ p, h3, h2{
     margin-left: -1%;
 }
 .videos{
-    width: 70%;
-    margin-left: 15%;
+    width: 1000px;
     display: block;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin: auto;
 }
 .videos li{
     list-style: none;
@@ -102,7 +100,7 @@ p, h3, h2{
     margin-left: -1%;
     margin-bottom: -1%;
     margin-right: -0.4%;
-    margin-top: 100%;
+    margin-top: 0%;
 }
 #iru{
     font-size: 1%;

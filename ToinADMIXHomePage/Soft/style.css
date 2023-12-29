@@ -53,6 +53,11 @@ li{
 #iru{
     font-size: 1%;
 }
+#desktop{
+    width: 101%;
+    border:solid 5px #bd0fe96f;
+    margin: 2% auto 5% -0.7%;
+}
 .ending {
     position: relative;
     font-family: serif;
@@ -65,7 +70,7 @@ li{
     margin-left: -1%;
     margin-bottom: -1%;
     margin-right: -0.4%;
-    margin-top: 100%;
+    margin-top: 300%;
 }
 .soft{
     position: absolute;
@@ -94,7 +99,4 @@ li{
 .soft a:hover{
     text-decoration: underline;
     transition: 0.3s;
-}
-#link{
-    width:2%;
 }

@@ -31,14 +31,14 @@
   int B;//偏差の微分
   int C;//操作量C
   int N;//微分ゲイン
-  int O;//操作量Aを割る定数
+  float O;//操作量Aを割る定数
   int P;//比例ゲイン
   int V;//微分用の今回偏差の保存
   int X;//攻め方向と現在の向きの差
   int Y;//開始時攻め方向
   int Z;//現在の向き
   int Smalldiff;//許容誤差
-  int goal;//現在攻め方向
+  int pixy;//0で普通のDIR, 1でPIXYDIR
 
 //BALL
   int list[8];//ボルセン配列
@@ -122,6 +122,7 @@ int MOTOR(){
       M3 = M3 > L ? (M3 - MPlus) : L;
     switch(LINE_MAIN()){//ラインチェック↓
       case 0:
+        DIR();
         I = LMP;
         J = LMP;
         K = LMP;
@@ -132,6 +133,7 @@ int MOTOR(){
         M3 = L / 2;
         break;
       case 1:
+        DIR();
         I = -1 * LMP;
         J = MP;
         K = -1 * LMP;
@@ -142,6 +144,7 @@ int MOTOR(){
         M3 = L / 2;
         break;
       case 2:
+        DIR();
         I = -1 * LMP;
         J = -1 * LMP;
         K = -1 * LMP;
@@ -152,6 +155,7 @@ int MOTOR(){
         M3 = L / 2;
         break;
       case 3:
+        DIR();
         I = MP;//0にしたらライン読まないよ！
         J = -1 * LMP;
         K = MP;
@@ -205,9 +209,9 @@ int BALL(void){
       max_index = i;
     }
   }
-  if(max_value >= 571 && max_value <=670){
+  if(max_value >= 601 && max_value <=700){
     return max_index + 8;
-      }else if(max_value >= 671){
+      }else if(max_value >= 701){
     return max_index + 16;
   }else{
     return max_index;
@@ -221,8 +225,11 @@ int BALL(void){
 int DIR(void)
 {
   while(TRUE){
+    N = 40;//微分ゲイン
+    P = 3;//比例ゲイン
+    O = 5;//操作量Aを割る定数
     Z = get_bno(0);
-    X = Z - goal;
+    X = Z - Y;
     if(X > 180){
       X = X - 360;
     }else if(X < -180){
@@ -242,12 +249,11 @@ int DIR(void)
       }else if(A > 100){
         A = 100;//操作量上限値
       }
-      
-    if(A > 0 && A < 20){
-      A = 25;
-    }else if(A < 0 && A > -20){
-      A = -25;
-    }
+      if(A > 0 && A < 25){
+        A = 25;
+      }else if(A < 0 && A > -25){
+        A = -25;
+      }
       gPwm[0] = A < 0 ? (A * -1) | 0x80 : A;  
       gPwm[1] = A < 0 ? (A * -1) : A | 0x80;
       gPwm[2] = A < 0 ? (A * -1) : A | 0x80; 
@@ -262,110 +268,78 @@ int DIR(void)
 
 
 
-/*
-//明間
-void PIXY(void){
-  if(chk_pixydat_p(1, 0x0020) && get_pixydat_s(1) > ((UINT)50 * (UINT)60)) {  
-    tasu = 0;
-    return;
-  }else if(chk_pixydat_p(1, 0x0030)){
-    set_Led(1, LED_ON);
-    goal = Y + tasu;
-    tasu = tasu + 5;
-    return;
-  }else if(chk_pixydat_p(1, 0x0060)){
-    set_Led(1, LED_ON);
-    goal = Y -  tasu;
-    tasu = tasu + 5;
-    return;
-  }
-}
-*/
-
-
-
-
-
-//傾き一定
-void PIXY(void){
-  if(chk_pixydat_p(1, 0x0010)){
-    if(chk_pixydat_p(1, 0x0040)){
-      return;
-    }else{
-      goal = Y - 45;
+void PIXYDIR(void){
+  while(TRUE){
+    if(get_pixydat_x(1) == 0){
+      DIR();
+      I = -30;
+      J = -30;
+      K = -30;
+      L = -30;
+      break;
     }
-  }else if(chk_pixydat_p(1, 0x0040)){
-    goal = Y + 45;
-  }else{
-    return;
-  }
-}
-
-
-
-
-/*
-//傾き増える
-void PIXY(void){
-  if(chk_pixydat_p(1, 0x0010)){
-    if(chk_pixydat_p(1, 0x0040)){
-      I = MP;
-      J = MP;
-      K = MP;
-      L = MP;
-      return;
-    }else{
-      goal = goal - 10;
-      I = 0;
-      J = 0;
-      K = 0;
-      L = 0;
-      return;
+    N = 100;//微分ゲイン
+    P = 2;//比例ゲイン
+    O = 8;//操作量Aを割る定数
+    X = 160 - get_pixydat_x(1);
+    if(X > 180){
+      X = X - 360;
+    }else if(X < -180){
+       X = X + 360;
     }
-  }else if(chk_pixydat_p(1, 0x0040)){
-    goal = goal + 10;
-      I = 0;
-      J = 0;
-      K = 0;
-      L = 0;
-      return;
-  }else{
-    I = -40;
-    J = -40;
-    K = -40;
-    L = -40;
-    return;
+    if(X > -1 * Smalldiff && X < Smalldiff){
+      break;
+    }else{
+      B = V - X;
+      V = X;
+      A = P * X;
+      C = N * B;
+      A = A - C;
+      A = A / O;
+      if(A < -100){
+        A = -100;//操作量下限値
+      }else if(A > 100){
+        A = 100;//操作量上限値
+      }
+      /*if(A > 0 && A < 25){
+        A = 25;
+      }else if(A < 0 && A > -25){
+        A = -25;
+      }*/
+      gPwm[0] = A < 0 ? (A * -1) | 0x80 : A;  
+      gPwm[1] = A < 0 ? (A * -1) : A | 0x80;
+      gPwm[2] = A < 0 ? (A * -1) : A | 0x80; 
+      gPwm[3] = A < 0 ? (A * -1) | 0x80 : A;  
+      pwm_out();
+      wait_ms(1);
+    }
   }
 }
-*/
+
 
 
 
 
 void user_main(void){
-  N = 40;//微分ゲイン
-  O = 5;//操作量Aを割る定数
-  P = 3;//比例ゲイン
   Y = get_bno(0);
-  goal = Y;
   MP = 70;//モーターの出力
   LMP = 100;//ライン出力
   MPlus = 5;
-  
   while(TRUE){
+    pixy = 0;
     set_Led(1, LED_OFF);
-    goal = Y;
-    
     switch(BALL()){
       //遠
       case 0://前
-        Smalldiff = 10;
+        pixy = 1;
+        Smalldiff = 20;
         I = MP;
         J = MP;
         K = MP;
         L = MP;
         break;
       case 1://右前
+        pixy = 1;
         Smalldiff = 15;
         I = MP;
         J = 0;
@@ -373,6 +347,7 @@ void user_main(void){
         L = 0;
         break;
       case 2://右
+        pixy = 1;
         Smalldiff = 20;
         I = MP;
         J = MP * -1;
@@ -409,6 +384,7 @@ void user_main(void){
         L = 0;
         break;
       case 6://左
+        pixy = 1;
         Smalldiff = 20;
         I = MP * -1;
         J = MP;
@@ -416,6 +392,7 @@ void user_main(void){
         L = MP;
         break;
       case 7://左前
+        pixy = 1;
         Smalldiff = 15;
         I = 0;
         J = MP;
@@ -427,13 +404,15 @@ void user_main(void){
         
       //普通
       case 8://前
-        Smalldiff = 10;
+        pixy = 1;
+        Smalldiff = 20;
         I = MP;
         J = MP;
         K = MP;
         L = MP;
         break;
       case 9://右前
+        pixy = 1;
         Smalldiff = 15;
         I = MP;
         J = MP * -1;
@@ -441,6 +420,7 @@ void user_main(void){
         L = MP * -1;
         break;
       case 10://右
+        pixy = 1;
         Smalldiff = 20;
         I = 0;
         J = MP * -1;
@@ -478,6 +458,7 @@ void user_main(void){
         L = MP * -1;
         break;
       case 14://左
+        pixy = 1;
         Smalldiff = 20;
         I = MP * -1;
         J = 0;
@@ -485,6 +466,7 @@ void user_main(void){
         L = 0;
         break;
       case 15://左前
+        pixy = 1;
         Smalldiff = 15;
         I = MP * -1;
         J = MP;
@@ -496,19 +478,23 @@ void user_main(void){
 
       //近
       case 16://前
-        PIXY();
-        Smalldiff = 10;
+        pixy = 1;
+        Smalldiff = 20;
+        I = MP;
+        J = MP;
+        K = MP;
+        L = MP;
         break;
       case 17://右前
-        goal = Y;
-        Smalldiff = 10;
+        pixy = 1;
+        Smalldiff = 20;
         I = 0;
         J = MP * -1;
         K = 0;
         L = MP * -1;
         break;
       case 18://右
-        goal = Y;
+        pixy = 1;
         Smalldiff = 20;
         I = MP * -1;
         J = MP * -1;
@@ -516,7 +502,6 @@ void user_main(void){
         L = MP * -1;
         break;
       case 19://右後
-        goal = Y;
         Smalldiff = 25;
         I = MP * -1;
         J = 0;
@@ -524,7 +509,6 @@ void user_main(void){
         L = 0;
         break;
       case 20://後
-        goal = Y;
         if(gAD[CN4] >= gAD[CN6]){
           Smalldiff = 30;
           I = MP * -1;
@@ -541,7 +525,6 @@ void user_main(void){
           break;
         }
       case 21://左後
-        goal = Y;
         Smalldiff = 25;
         I = 0;
         J = MP * -1;
@@ -549,7 +532,7 @@ void user_main(void){
         L = MP * -1;
         break;
       case 22://左
-        goal = Y;
+        pixy = 1;
         Smalldiff = 20;
         I = MP * -1;
         J = MP * -1;
@@ -557,23 +540,27 @@ void user_main(void){
         L = MP * -1;
         break;
       case 23://左前
-        goal = Y;
-        Smalldiff = 10;
+        pixy = 1;
+        Smalldiff = 20;
         I = MP * -1;
         J = 0;
         K = MP * -1;
         L = 0;
         break;
       case 24://見えない
-        goal = Y;
         Smalldiff = 10;
-        I = 0;
-        J = 0;
-        K = 0;
-        L = 0;
+        I = -30;
+        J = -30;
+        K = -30;
+        L = -30;
         break;
     }
-    DIR();
+    if(pixy == 0){
+      DIR();
+    }else if(pixy == 1){
+      Smalldiff = 60;
+      PIXYDIR();
+    }
     MOTOR();
   }
 }

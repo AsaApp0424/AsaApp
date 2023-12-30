@@ -294,8 +294,8 @@ html{
     display: inline-block;
     transition: all 0.4s;
     position: absolute;
-    height: 3px;
-    border-radius: 2px;
+    height: 6px;
+    border-radius: 10px;
     background-color: #bd0fe9;
     width:50%;
     margin-top: 10%;

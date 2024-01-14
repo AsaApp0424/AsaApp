@@ -221,10 +221,6 @@ nav ul li a{
 #black{
     z-index: 99999;
 }
-#black:hover{
-    z-index: 0;
-    display: none;
-}
 @media screen and (max-width: 1000px) {
     .frame{
         margin-top: 15%;
@@ -255,6 +251,10 @@ nav ul li a{
     }
 }
 @media screen and (min-width: 1000px) {
+    #black:hover{
+        z-index: 0;
+        display: none;
+    }
     .open{
         display: none;
     }

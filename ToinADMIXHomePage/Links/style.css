@@ -214,15 +214,16 @@ nav ul li a{
     margin: -3% auto auto 94%;
     width: 3%;
 }
+.blog img{
+    position: absolute;
+    margin: -2.8% auto auto 89%;
+    width: 3%;
+}
 #white{
     z-index: 100;
 }
 #black{
     z-index: 99999;
-}
-#black:hover{
-    z-index: 0;
-    display: none;
 }
 @media screen and (max-width: 1000px) {
     .frame{
@@ -257,8 +258,16 @@ nav ul li a{
         width: 10%;
         margin: -11% auto auto 87%;
     }
+    .blog img{
+        width: 10%;
+        margin: -11% auto auto 76%;
+    }
 }
 @media screen and (min-width: 1000px) {
+    #black:hover{
+        z-index: 0;
+        display: none;
+    }
     .open{
         display: none;
     }

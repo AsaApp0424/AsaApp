@@ -390,7 +390,7 @@ nav ul li a{
     background-color: #bd0fe96f;
     transition: 0.3s;
 }
-.x{
+.x, .blog{
     position: relative;
 }
 .x img{
@@ -398,8 +398,10 @@ nav ul li a{
     margin: -3% auto auto 94%;
     width: 3%;
 }
-#black:hover{
-    display: none;
+.blog img{
+    position: absolute;
+    margin: -2.8% auto auto 89%;
+    width: 3%;
 }
 @media screen and (max-width: 1000px) {
     .articles p{
@@ -411,5 +413,14 @@ nav ul li a{
     .x img{
         width: 10%;
         margin: -11% auto auto 87%;
+    }
+    .blog img{
+        width: 10%;
+        margin: -11% auto auto 76%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    #black:hover{
+        display: none;
     }
 }

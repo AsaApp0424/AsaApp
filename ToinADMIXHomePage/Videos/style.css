@@ -40,13 +40,13 @@ p, h3, h2{
     transition: 0.4s;
 }
 #thispage:hover{
-    background-color: #ffff;
+    background-color: #fceeff;
     color:#bd0fe9;
     transition: 0.3s;
 }
 #background{
     position: fixed;
-    background-color: #ffffff;
+    background-color: #fceeff;
     width: 102%;
     height: 102px;
     font-size: 100%;
@@ -256,7 +256,7 @@ nav ul li a{
     }
     .blog img{
         width: 10%;
-        margin: -11% auto auto 76%;
+        margin: -11% auto auto 75%;
     }
 }
 @media screen and (min-width: 1000px) {

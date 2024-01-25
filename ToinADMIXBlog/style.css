@@ -16,14 +16,41 @@ a{
     color: #000000d8;
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
 #tohome{
-    width: 7%;
+    width: 8%;
     margin: 0.5% auto auto 0%;
+    position: fixed;
 }
 #topimg{
     width: 20%;
-    display: block;
-    margin: auto;
+    margin: 3% auto auto 40%;
+}
+.menu{
+    margin-top: 2%;
+    margin-left: -6%;
+    width: 25%;
+    position: fixed;
+    border:solid 1px #ffffff00;
+    border-radius: 50px;
+    background-color: #ffffffa7;
+    height: 80%;
+}
+.menu li{
+    margin-left: 30%;
+    margin-top: 15%;
+    position: relative;
+    font-size: 35px;
+    color: #224bddd8;
+}
+.menu a{
+    position: relative;
+    font-size: 20px;
+    color: #000000;
+    margin: auto auto auto 35%;
+    font-family: 'Ubuntu';
 }
 #newest{
     font-size: 45px;
@@ -75,7 +102,7 @@ a{
     display: block;
     margin: auto;
     background-color: #224bdd4d;
-    height: 120px;
+    height: 90px;
     margin: 100% -0.4% -1% -0.5%;
 }
 .ending p{

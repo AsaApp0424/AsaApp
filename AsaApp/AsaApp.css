@@ -82,6 +82,9 @@ a{
 #news p{
     color: #5AABFF;
 }
+#blog p{
+    color:#224bddd8;
+}
 .start {
 	background: #8fe5ff00;
 	position: fixed;

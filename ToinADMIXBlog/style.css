@@ -3,14 +3,14 @@ html{
     margin: 0;
     padding: 0;
     width: 100%;
+    border: solid 1px #ffffff00;
 }
 h1{
     font-size: 40px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Ubuntu';
 }
 p{
     font-size: 20px;
-    font-family: 'Ubuntu';
 }
 a{
     color: #000000d8;
@@ -29,7 +29,7 @@ li{
     margin: 3% auto auto 40%;
 }
 .menu{
-    margin-top: 2%;
+    margin-top: -2%;
     margin-left: -6%;
     width: 25%;
     position: fixed;
@@ -44,18 +44,39 @@ li{
     position: relative;
     font-size: 35px;
     color: #224bddd8;
+    font-family: 'Ubuntu';
+}
+.formenuborder{
+    border: solid 2px #224bddd8;
+    width: 40%;
+    border-radius: 50px;
+    margin: auto auto 3% 28%;
 }
 .menu a{
     position: relative;
     font-size: 20px;
     color: #000000;
-    margin: auto auto auto 35%;
+}
+.menu a p{
     font-family: 'Ubuntu';
+    margin: auto auto auto 33%;
+    background-color: #224bdd4d;
+    width: 50%;
+    padding: 1% 1% 1% 5%;
+    border: solid 1px #ffffff00;
+    border-radius: 15px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.menu a p:hover{
+    background-color: #224bdd2c;
+    transition: 0.3s;
 }
 #newest{
     font-size: 45px;
     margin: 1% auto auto 27%;
     color: #224bddd8;
+    font-family: 'Ubuntu';
 }
 .articles{
     width: 50%;
@@ -69,7 +90,6 @@ li{
 }
 .articles:hover{
     background-color: #224bdd2c;
-    border-radius: 70px;
     transition: 0.3s;
 }
 .articles h1{
@@ -77,6 +97,7 @@ li{
 }
 .articles p{
     margin: 0% auto auto 70%;
+    font-family: 'Ubuntu';
 }
 .articles img{
     border-radius: 10px;

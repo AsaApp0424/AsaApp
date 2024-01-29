@@ -3,11 +3,13 @@ html{
     margin: 0;
     padding: 0;
     width: 100%;
-    border: solid 1px #ffffff00;
 }
 h1{
     font-size: 40px;
     font-family: 'Ubuntu';
+}
+h2{
+    font-size: 30px;
 }
 p{
     font-size: 20px;
@@ -40,11 +42,14 @@ li{
 }
 .menu li{
     margin-left: 30%;
-    margin-top: 15%;
+    margin-top: 5%;
     position: relative;
-    font-size: 35px;
+    font-size: 30px;
     color: #224bddd8;
     font-family: 'Ubuntu';
+}
+#menutop{
+    margin-top: 10%;
 }
 .formenuborder{
     border: solid 2px #224bddd8;
@@ -67,6 +72,7 @@ li{
     border-radius: 15px;
     transition: 0.3s;
     font-weight: bold;
+    margin-bottom: 2%;
 }
 .menu a p:hover{
     background-color: #224bdd2c;
@@ -93,7 +99,8 @@ li{
     transition: 0.3s;
 }
 .articles h1{
-    margin: 3% auto auto 6%;
+    margin: 3% auto auto 7%;
+    font-size: 35px;
 }
 .articles p{
     margin: 0% auto auto 70%;
@@ -154,29 +161,56 @@ li{
     border-radius: 30px;
 }
 #title{
-    color: #224bddd8;
+    color: #000000d8;
     margin-left: 25%;
     text-align: center;
     border-radius: 10px;
     width: 50%;
     padding: 0%;
+    font-family: 'Ubuntu';
 }
 .imginarticles{
     width: 50%;
-    margin: 0% auto auto 25%;
+    margin: 5% auto auto 25%;
     border:solid 5px #224bddd8;
     border-radius: 70px;
 }
+.contents h2{
+    color: #000000;
+    margin: 10% auto 3% 25%;
+    border-bottom: solid 3px #224bddd8;
+    border-left: solid 13px #224bddd8;
+    width: 50%;
+}
+.contents p{
+    color: #000000;
+    margin: 5% auto 3% 28%;
+    width: 44%;
+    font-family: 'Ubuntu';
+}
+.contents a{
+    color: #224bddd8;
+    transition: 0.3s;
+}
+.contents a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
 @media screen and (max-width: 1000px) {
     #tohome{
-        width: 20%;
-        margin: 2% auto auto 1%;
+        width: 15%;
+        margin: -7% auto auto 0%;
+        position: fuxed;
     }
     #topimg{
         display: none;
     }
+    .menu{
+        display: none;
+    }
     #newest{
         margin-left: 17%;
+        margin-top: 5%;
     }
     .articles{
         width: 70%;
@@ -187,14 +221,21 @@ li{
     }
     .ending p{
         font-size: 25px;
-        padding-top: 4.5%;
+        padding-top: 3%;
     }
     .x img{
-        width: 10%;
+        width: 8%;
         margin: 101.5% auto auto 87%;
     }
     .blog img{
-        width: 10%;
+        width: 8%;
         margin: 101.5% auto auto 76%;
+    }
+    #fortitleborder{
+        width: 50%;
+        margin: 2% auto 2% 25%;
+    }
+    body{
+        margin-top: 10%;
     }
 }

@@ -63,6 +63,7 @@ li{
     color: #000000;
 }
 .menu a p{
+    font-size: 15px;
     font-family: 'Ubuntu';
     margin: auto auto auto 30%;
     background-color: #224bdd4d;
@@ -234,6 +235,19 @@ li{
     #fortitleborder{
         width: 50%;
         margin: 2% auto 2% 25%;
+    }
+    .imginarticles{
+        width: 60%;
+        margin: 5% auto auto 20%;
+    }
+    .contents h2{
+        width: 60%;
+        margin: 10% auto 3% 20%;
+    }
+    .contents p{
+        width: 54%;
+        margin: 5% auto 3% 23%;
+        font-size: 30px;
     }
     body{
         margin-top: 10%;

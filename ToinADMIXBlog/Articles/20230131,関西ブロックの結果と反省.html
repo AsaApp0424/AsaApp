@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>関西ブロックの結果と反省</title>
+    <link rel="shortcut icon" href="../img/ToinADMIXBlog_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Carrois+Gothic+SC&family=DM+Serif+Display&family=Gothic+A1:wght@800&family=Josefin+Slab:wght@700&family=League+Gothic&family=Montserrat:ital@1&family=Nanum+Gothic:wght@800&family=Noto+Sans+JP:wght@600&family=Roboto+Slab:wght@200&family=Tilt+Neon&family=Titan+One&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+    <body style="background-color:#224bdd2c">
+        <a href="../index.html"><img src="../img/ToinADMIXBlog_home.png" width="100%" id="tohome"></a>
+        <img src="../img/ToinADMIXBlog_home.png" width="100%" id="topimg">
+        <div id="fortitleborder"></div>
+        <h1 id="title">関西ブロックの結果と反省</h1>
+        <div id="fortitleborder"></div>
+        <p id="date">[ 2024/01/31 | AU ]</p>
+        <img src="../img/certificate_kansai.jpg" width="100%" class="imginarticles">
+        <div class="contents">
+            <!--ここから↓
+            <h2>　見出し</h2>
+            <p>
+                記事
+            </p>
+            <img src="画像リンク" width="100%" class="imginarticles">
+            ここまでコピーして一つの話題-->
+            <h2>　試合結果</h2>
+            <p>
+                1試合目 : vs IWAS Toin 1-9 ✖<br><br>
+                2試合目 : vs 雪-02 4-0 〇<br><br>
+                3試合目 : vs ビタミン足りてますか 6-0 〇<br><br>
+                4試合目 : vs ToinIOT² 6-5 〇<br><br>
+                5試合目 : vs Toin Sigma 3-8 ✖
+            </p>
+            <img src="../img/kansai_results.png" width="100%" class="imginarticles">
+            <h2>　敗因（ハード面）</h2>
+            <p>
+                ・普段調整している部屋と会場とで明るさなどが違いpixyが誤反応しやすかった <br>　（壁を黄色と認識することも） <br>
+                　→色の範囲を調整して対応したが、終始姿勢制御がおかしかった<br><br>
+                ・1機目のボールセンサの値が1つおかしかった<br>
+                　→センサモニタでは異常がなかったため気づくことができなかった<br><br>
+                ・2機目がモーターバランスの関係でまっすぐ進めなかった（これは大会前から）<br>
+                　→出力目標値を調整するなどしていたが時々ブロックが遅くなっていた<br><br>
+                ・思っていた以上にバッテリーの充電が遅く、 <br>　最後のほうの試合では電圧が低い状態で戦わなければならなかった。<br>
+                　→前日に充電していけなかった、（会場のコンセントの電圧も低かった？）<br>
+            </p>
+            <h2>　敗因（ソフト面）</h2>
+            <p>
+                ・pixyの調子が悪い時用のプログラムが完璧にできておらず、ソフト側で対応できなかった<br>
+                　→ボタン切り替えを予定していたが、ライン処理に影響があったためそのプログラムを無くしていた<br>
+                　また、カメラの有用性を捨てる選択ができなかった<br><br>
+                ・普段よりもラインから出やすかった<br>
+                　→調整の時も極力本番に近い電圧で走らせるようにしていたが、5分間走らせ続けると何度かラインから出てしまった<br><br>
+                ・ラインをよける動作が意外とタイムロスになっていた<br>
+                　（フリーで入れられる場面でもライン際だとアプローチできない）<br>
+                　→ラインを踏んだ時の動きをもっと合理的なものに変えたい<br><br>
+                ・キーパーが中立点にあるボールに触れられない時があった<br>
+                　（状況によっては故障とみられる）<br>
+                　→全方位でないカメラで後ろの自陣ゴールを見ながらゴール前にとどまるプログラムだったため中立点の前まで行くとゴール側に動いてしまった<br>
+                　反対側に動くのではなく止まるようにするなどの対策をしたい<br><br>
+                ・キーパーが相手のアタッカーに横に押された後ゴール前に復帰できなかった。<br>
+                　→調整の時には全く想定できておらず、大会中に見つかった問題<br>
+                　最後にゴールが見えたのが右側か左側かを記録しておきそれに従ってゴール前に帰ってこられるようにしたい
+            </p>
+            <img src="../img/kansai_robot.jpg" width="100%" class="imginarticles">
+            <h2>　感想</h2>
+            <p>
+                記事
+            </p>
+            <img src="画像リンク" width="100%" class="imginarticles">
+        </div>
+        <div class="snslinks">
+            <div class="x">
+                <a href="https://twitter.com/AdmixToin476"><img src="../../ToinADMIXHomePage/X_logo.png" width="100%" id="white" z-index="1"></a>
+                <a href="https://twitter.com/AdmixToin476"><img src="../../ToinADMIXHomePage/X_logo_white.png" width="100%" id="black"></a>
+            </div>
+            <div class="blog">
+                <a href="../../ToinADMIXHomePage/Home/index.html"><img src="../../ToinADMIXBlog/img/ToinADMIXHomePage_iconwithletters_black.png" width="100%" id="white" z-index="1"></a>
+                <a href="../../ToinADMIXHomePage/Home/index.html"><img src="../../ToinADMIXBlog/img/ToinADMIXHomePage_iconwithletters_white.png" width="100%" id="black"></a>
+            </div>
+        </div>
+        <div class="ending">
+            <p>© 2023 AU - Toin ADMIX</p>
+        </div>
+    </body>
+</html>

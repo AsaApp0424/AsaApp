@@ -2,7 +2,7 @@
 p, h1, h2, h3{
     font-family: Verdana;
 }
-p, h3, h2{
+h3, h2{
     font-family: Serif;
 }
 .tohome{
@@ -90,7 +90,7 @@ p, h3, h2{
 }
 .ending {
     position: relative;
-    font-family: serif;
+    font-family: 'Ubuntu';
     color: #ffff;
     font-size: 100%;
     text-align: center;

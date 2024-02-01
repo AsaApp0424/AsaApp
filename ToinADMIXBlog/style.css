@@ -130,12 +130,15 @@ li{
     margin-left: 25%;
     margin-top: 2%;
 }
+#forblank{
+    margin-bottom: 80%;
+}
 .ending{
     display: block;
     margin: auto;
     background-color: #224bdd4d;
     height: 90px;
-    margin: 100% -0.4% -1% -0.5%;
+    margin: 5% -0.4% -1% -0.5%;
 }
 .ending p{
     color: #ffffff;
@@ -147,12 +150,22 @@ li{
 }
 .x img{
     position: absolute;
-    margin: 101.5% auto auto 94%;
+    margin: 6% auto auto 94%;
+    width: 3%;
+}
+.xonhome img{
+    position: absolute;
+    margin: 1% auto auto 94%;
     width: 3%;
 }
 .blog img{
     position: absolute;
-    margin: 101.5% auto auto 89%;
+    margin: 6% auto auto 89%;
+    width: 3%;
+}
+.blogonhome img{
+    position: absolute;
+    margin: 1% auto auto 89%;
     width: 3%;
 }
 #black:hover{
@@ -196,6 +209,7 @@ li{
     margin: 5% auto 3% 28%;
     width: 44%;
     font-family: 'Ubuntu';
+    line-height: 200%;
 }
 .contents a{
     color: #224bddd8;
@@ -234,27 +248,41 @@ li{
     }
     .x img{
         width: 8%;
-        margin: 101.5% auto auto 87%;
+        margin: 6% auto auto 87%;
     }
     .blog img{
         width: 8%;
-        margin: 101.5% auto auto 76%;
+        margin: 6% auto auto 76%;
+    }
+    .xonhome img{
+        margin: 1% auto auto 87%;
+        width: 8%;
+    }
+    .blogonhome img{
+        position: absolute;
+        margin: 1% auto auto 76%;
+        width: 8%;
+    }
+    #title{
+        width: 70%;
+        margin-left: 15%;
     }
     #fortitleborder{
         width: 50%;
         margin: 2% auto 2% 25%;
     }
     .imginarticles{
-        width: 60%;
-        margin: 5% auto auto 20%;
+        width: 70%;
+        margin: 5% auto auto 15%;
     }
     .contents h2{
-        width: 60%;
-        margin: 10% auto 3% 20%;
+        font-size: 40px;
+        width: 70%;
+        margin: 10% auto 3% 15%;
     }
     .contents p{
-        width: 54%;
-        margin: 5% auto 3% 23%;
+        width: 64%;
+        margin: 5% auto 3% 18%;
         font-size: 30px;
     }
     body{

@@ -79,6 +79,11 @@ li{
     margin-left: 15%;
     display: block;
 }
+.soft p{
+    font-size: 30px;
+    margin-left: 5%;
+}
+
 .soft h2{
     font-size: 250%;
     margin-top: 10%;

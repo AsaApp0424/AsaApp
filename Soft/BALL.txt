@@ -1,0 +1,35 @@
+//BALL
+int BALL(void){
+  int list[8];
+  int max_value;
+  int max_index;
+  int i;
+  list[0] = gAD[CN1];
+  list[1] = gAD[CN2];
+  list[2] = gAD[CN3];
+  list[3] = gAD[CN4];
+  list[4] = gAD[CN5];
+  list[5] = gAD[CN6];
+  list[6] = gAD[CN7];
+  list[7] = gAD[CN8];
+  if(list[0] + list[1] + list[2] + list[3] + list[4] + list[5] + list[6] + list[7] <= 100){
+    return 16;
+  }
+  max_value = list[0];
+  max_index = 0;
+  for (i = 0; i < 8; i++) {
+    if (list[i] > max_value) {
+      max_value = list[i];
+      max_index = i;
+    }
+  }
+  if(max_value >= 950){
+    return max_index + 8;
+  }else{
+    return max_index;
+  }
+}
+
+void use_main(void){
+    BALL();
+}

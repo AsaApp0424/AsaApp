@@ -1,0 +1,27 @@
+//LINE_MAIN
+int LINE_MAIN(void){
+  if (sub_io_get_gV(1, VAR_M) >= 30) {
+    set_Led(1, LED_ON);
+    return 0;
+  }
+  if (sub_io_get_gV(1, VAR_N) >= 30) {
+    set_Led(1, LED_ON);
+    return 1;
+  }
+  if (sub_io_get_gV(1, VAR_O) >= 30) {
+      set_Led(1, LED_ON);
+    return 2;
+  }
+  if (sub_io_get_gV(1, VAR_P) >= 30) {
+      set_Led(1, LED_ON);
+    return 3;
+  }
+  else{
+    set_Led(1, LED_OFF);
+    return 4;
+  }
+}
+
+void user_main(void){
+    LINE_MAIN();
+}

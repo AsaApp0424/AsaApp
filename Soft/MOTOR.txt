@@ -1,0 +1,141 @@
+//MOTOR_P_TASUDAKE
+#include "D_Main.h"
+#include "D_I2C.h"
+#include "D_SIO.h"
+#include "D_EIO.h"
+  
+  
+  
+//現在のモーター出力
+int M0;
+int M1;
+int M2;
+int M3;
+int A0;
+int A1;
+int A2;
+int A3;
+
+
+int LINE_MAIN(void){
+  if (sub_io_get_gV(1, VAR_M) >= 200) {
+    set_Led(1, LED_ON);
+    return 0;
+  }
+  if (sub_io_get_gV(1, VAR_N) >= 200) {
+    set_Led(1, LED_ON);
+    return 1;
+  }
+  if (sub_io_get_gV(1, VAR_O) >= 200) {
+    set_Led(1, LED_ON);
+    return 2;
+  }
+  if (sub_io_get_gV(1, VAR_P) >= 200) {
+    set_Led(1, LED_ON);
+    return 3;
+  }
+  else{
+    set_Led(1, LED_OFF);
+    return 4;
+  }
+}
+
+
+
+int MOTOR(int I, int J, int K, int L){//出力目標値
+  if(I == M0){
+    M0 = I;
+  }else{
+    M0 = I/2;
+  }
+  if(J == M1){
+    M1 = J;   
+  }else{
+    M1 = J/2;
+  }
+  if(K == M2){
+    M2 = K;
+  }else{
+    M2 = K/2;
+  }
+  if(L == M3){
+    M3 = L;
+  }else{
+    M3 = L/2;
+  }
+  while (TRUE){
+    gPwm[0] = M0 < 0 ? (M0 * -1) | 0x80 : M0;
+    gPwm[1] = M1 < 0 ? (M1 * -1) : M1 | 0x80;
+    gPwm[2] = M2 < 0 ? (M2 * -1) | 0x80 : M2;
+    gPwm[3] = M3 < 0 ? (M3 * -1) : M3 | 0x80;
+    pwm_out();
+    wait_ms(1);
+    if(I >= 0)//比例制御↓
+      M0 = M0 < I ? (M0 + 3) : I;
+    else
+      M0 = M0 > I ? (M0 - 3) : I;
+    if(J >= 0)
+      M1 = M1 < J ? (M1 + 3) : J;
+    else
+      M1 = M1 > J ? (M1 - 3) : J;
+    if(K >= 0)
+      M2 = M2 < K ? (M2 + 3) : K;
+    else
+      M2 = M2 > K ? (M2 - 3) : K;
+    if(L >= 0)
+      M3 = M3 < L ? (M3 + 3) : L;
+    else
+      M3 = M3 > L ? (M3 - 3) : L;
+    switch(LINE_MAIN()){//ラインチェック↓
+      case 0:
+        I = 50;
+        J = 50;
+        K = 50;
+        L = 50;
+        M0 = I / 2;
+        M1 = J / 2;
+        M2 = K / 2;
+        M3 = L / 2;
+        break;
+      case 1:
+        I = -50;
+        J = 0;
+        K = -50;
+        L = 0;
+        M0 = I / 2;
+        M1 = J / 2;
+        M2 = K / 2;
+        M3 = L / 2;
+        break;
+      case 2:
+        I = -50;
+        J = -50;
+        K = -50;
+        L = -50;
+        M0 = I / 2;
+        M1 = J / 2;
+        M2 = K / 2;
+        M3 = L / 2;
+        break;
+      case 3:
+        I = 0;
+        J = -50;
+        K = 0;
+        L = -50;
+        M0 = I / 2;
+        M1 = J / 2;
+        M2 = K / 2;
+        M3 = L / 2;
+        break;
+      case 4:
+        break;
+            }
+    if(I >= 0){//目標値に到達↓
+      if(M0 >= I && M1 >= J && M2 >= K && M3 >= L)
+        break;
+    }else if(I < 0){
+      if(I >= M0 && J >= M1 && K >= M2 && L >= M3)
+        break;
+    }
+  }
+}

@@ -1,0 +1,511 @@
+@charset "utf-8";
+html{
+    margin: 0;
+    padding: 0;
+}
+.tohome{
+    position: fixed;
+}
+.tohome img{
+    margin-top: 0px;
+    margin-left: 3%;
+}
+.menu{
+    margin-top: 0px;
+    width: 70%;
+    margin-left: 17%;
+    display: block;
+    position: fixed;
+}
+.menu a{
+    color: #bd0fe9;
+    float:left;
+    width: 19%;
+    border-right: solid 1px #000000;
+    border-left: solid 1px #000000;
+    transition: 0.4s;
+    text-align: center;
+    font-family: Verdana;
+    text-decoration: none;
+    background-color: #ffffff00;
+}
+.menu a:hover{
+    color:#ffffff;
+    background-color: #bd0fe96f;
+    transition: 0.3s;
+}
+#background{
+    position: fixed;
+    background-color: #fceeff;
+    width: 102%;
+    height: 102px;
+    font-size: 100%;
+    margin-top: -3%;
+    margin-left: -1%;
+}
+
+#admix_home{
+    text-align: center;
+    margin-top: 50px;
+}
+/*
+.frame{
+    position: relative;
+    overflow: hidden;
+}
+.admixes{
+    text-align: center;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#photo1{
+    background-image: url('./4人写ってた.jpg');
+    animation: slide-animation-01 24s infinite;
+}
+#photo2{
+    background-image: url('./aftertoinnode.JPG');
+    animation: slide-animation-02 24s infinite;
+}
+@keyframes slide-animation-01 {
+    0% {opacity: 1; transform: scale(1.0);}
+    30% {opacity: 1;}
+    40% {opacity: 0; transform: scale(1.15);}
+    90% {opacity: 0}
+   100% {opacity: 1; transform: scale(1.0);}
+   }
+   @keyframes slide-animation-02 {
+    0% {opacity: 0;}
+    30% {opacity: 0; transform: scale(1.1);}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {opacity: 0; transform: scale(1.0);}
+   100% {opacity: 0;}
+   }
+*/
+
+.frame{
+    margin: 0;
+    padding: 0;
+    border-top:solid 5px #bd0fe96f;
+    border-bottom:solid 5px #bd0fe96f;
+    position: relative;
+    width: 101%;
+    height: 850px;
+    overflow: hidden;
+    margin-left: -0.5%;
+}
+@media screen and (max-width: 1000px) {
+    .frame{
+        margin-top: 15%;
+        height: 600px;
+    }
+    #background{
+        height: 150px;
+    }
+    .menu{
+        display: none;
+    }
+    .tohome img{
+        width: 30%;
+        margin-top: 2%;
+    }
+    #admix_home{
+        display: none;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .open{
+        display: none;
+    }
+}
+.img-01, .img-02, .img-03, .img-04, .img-05, .img-06, .img-07, .img-08, .img-09, .img-10{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-01{
+    background-image: url('./afteromoshiro.JPG');
+    animation: slide-animation-01 40s infinite;
+}
+.img-02{
+    background-image: url('./red_1.JPG');
+    animation: slide-animation-02 40s infinite;
+}
+.img-03{
+    background-image: url('./red_1_inthedark.JPG');
+    animation: slide-animation-03 40s infinite;
+}
+.img-04{
+    background-image: url('./sunandrobot.JPG');
+    animation: slide-animation-04 40s infinite;
+}
+.img-05{
+    background-image: url('./redtoblackwhite.JPG');
+    animation: slide-animation-05 40s infinite;
+}
+.img-06{
+    background-image: url('./robotinthedark.JPG');
+    animation: slide-animation-06 40s infinite;
+}
+.img-07{
+    background-image: url('./aftertoinnode.JPG');
+    animation: slide-animation-07 40s infinite;
+}
+.img-08{
+    background-image: url('./blackwhitetored.JPG');
+    animation: slide-animation-08 40s infinite;
+}
+.img-09{
+    background-image: url('./robotsinthesky.JPG');
+    animation: slide-animation-09 40s infinite;
+}
+.img-10{
+    background-image: url('./kansai_robot.jpg');
+    animation: slide-animation-10 40s infinite;
+}
+@keyframes slide-animation-01 {
+    0% {opacity: 1;}
+    10% {opacity: 1;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-02 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 1;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-03 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 1;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-04 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-05 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 1;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-06 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-07 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 1;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-08 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 1;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-09 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-10 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+
+
+.articles{
+    display: block;
+    margin: auto;
+    width: 700px;
+}
+.articles a{
+    text-decoration: none;
+    color: #bd0fe9;
+    transition: 0.4s;
+}
+.articles a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.articles h2{
+    font-size: 250%;
+    margin-top: 7%;
+}
+.articles h3{
+    font-family: serif;
+    font-size: 200%;
+    margin-left: 5%;
+}
+.articles p{
+    font-family: serif;
+    font-size: 130%;
+    margin-left: 10%;
+}
+.whatisrcj img, .whatdowedo img{
+    border:solid 5px #bd0fe96f;
+    border-radius: 70px;
+    margin: 5% auto 5% auto;
+}
+.ending {
+    position: relative;
+    font-family: 'Ubuntu';
+    color: #ffff;
+    font-size: 100%;
+    text-align: center;
+    background-color: #bd0fe96f;
+    background-size: 100%;
+    height: 30%;
+    margin-left: -1%;
+    margin-bottom: -1%;
+    margin-right: -0.4%;
+}
+#iru{
+    font-size: 1%;
+    color: #ffff;
+}
+.start {
+	background: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+}
+
+.open{
+    position: fixed;
+    z-index: 99999;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin: 0% auto auto 95%;
+}
+.open span{
+    z-index: 999;
+    display: inline-block;
+    transition: all 0.3s;
+    position: absolute;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #bd0fe9;
+    width:50%;
+    margin-top: 14%;
+    margin-left: -60%;
+}
+.open span:nth-of-type(1){
+    top: 10px;
+}
+.open span:nth-of-type(2){
+    display: none;
+    top: 35px;
+}
+.open span:nth-of-type(3){
+    top: 50px;
+}
+.open.active span:nth-of-type(1){
+    top: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+.open.active span:nth-of-type(2){
+    opacity: 0;
+}
+.open.active span:nth-of-type(3){
+    top: 30px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+#g-nav.panelactive #g-nav-list{
+    position: fixed;
+    z-index: 9999999;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scoroling: touch;
+}
+
+#g-nav ul{
+    position: absolute;
+    z-index: 999;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav ul{
+    z-index: 999;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li a{
+    z-index: 999;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    line-height: 250%;
+}
+
+#g-nav{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: -120%;
+    width: 100%;
+    height: 100vh;
+    background: #fceeff;
+    transition: all 0.6s;
+}
+
+#g-nav.panelactive{
+    right: 0;
+}
+.g-nav-list ul li a{
+    color: #bd0fe9;
+    font-size: 400%;
+    text-align: center;
+    transition: 0.3s;
+    width: 100%;
+    border-top: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+    font-family: Verdana;
+}
+.g-nav-list ul li a:hover{
+    color:#ffffff;
+    background-color: #bd0fe96f;
+    transition: 0.3s;
+}
+.x, .blog{
+    position: relative;
+}
+.x img{
+    position: absolute;
+    margin: -3% auto auto 94%;
+    width: 3%;
+}
+.blog img{
+    position: absolute;
+    margin: -2.8% auto auto 89%;
+    width: 3%;
+}
+@media screen and (max-width: 1000px) {
+    .articles p{
+        font-size: 40px;
+    }
+    .ending p{
+        font-size: 30px;
+    }
+    .x img{
+        width: 10%;
+        margin: -11% auto auto 87%;
+    }
+    .blog img{
+        width: 10%;
+        margin: -11% auto auto 76%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    #black:hover{
+        display: none;
+    }
+}

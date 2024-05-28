@@ -1,0 +1,25 @@
+//LINE_SUB
+#include "D_Main.h"
+#include "D_I2C.h"
+#include "D_SIO.h"
+#include "D_EIO.h"
+
+void user_main(void)
+{
+//初期値
+  gV[VAR_S] = gAD[CN1];
+  gV[VAR_T] = gAD[CN2];
+  gV[VAR_U] = gAD[CN3];
+  gV[VAR_V] = gAD[CN4];
+  gV[VAR_W] = gAD[CN5];
+  gV[VAR_X] = gAD[CN6];
+//現在との差
+  while(TRUE){ 
+    gV[VAR_M] = gAD[CN1] - gV[VAR_S];
+    gV[VAR_N] = gAD[CN2] - gV[VAR_T];
+    gV[VAR_O] = gAD[CN3] - gV[VAR_U];
+    gV[VAR_P] = gAD[CN4] - gV[VAR_V];
+    gV[VAR_Q] = gAD[CN5] - gV[VAR_W];
+    gV[VAR_R] = gAD[CN6] - gV[VAR_X];
+  }
+}

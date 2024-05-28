@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hard</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="shortcut icon" href="../Home/ADMIX_LOGO.png">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js'></script>
+        <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js'></script>
+    </head>
+    <body style="background-color:#cc59e814;">
+        <div class="tohome" style="z-index:200">
+            <a href="../Home/">
+                <img src="../Home/ADMIX_home.png" width="120px">
+            </a>
+        </div>
+        <header class="menu" style="z-index:200">
+            <p><a href="../Aboutus/">About us</a></p>
+            <p><a href="../Soft/">Soft</a></p>
+            <p><a href="../Hard/" id="thispage">Hard</a></p>
+            <p><a href="../Videos/">Videos</a></p>
+            <p><a href="../Links/">Links</a></p>
+        </header>
+        <div id="background" style="z-index:100"></div>
+        <p id="iru">a</p>
+        <div class="open"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+            <div class="g-nav-list">
+                <ul>
+                    <li><a href="../Aboutus">About us</a></li>
+                    <li><a href="../Soft/">Soft</a></li>
+                    <li><a href="../Hard/" id="thispage">Hard</a></li>
+                    <li><a href="../Videos/">Videos</a></li>
+                    <li><a href="../Links/">Links</a></li>
+                </ul>
+            </div>
+        </nav>
+        <img src="./3Dmodel.png" width="100%" id="topimg">
+        <div class="articles">
+            <h1 id="hardh1">3D models (Fusion 360)</h1>
+            <div class="threedmodel">
+                <a href="https://a360.co/3tFNq0C"><h2>admix_1_2024</h2></a>
+            </div>
+            <div class="threedmodel">
+                <a href="https://a360.co/49ab9F5"><h2>admix_0.1_2025</h2></a>
+            </div>
+            <div class="threedmodel">
+                <a href="https://a360.co/49eTEmQ"><h2>admix_0.1_2025_dribbler</h2></a>
+            </div>
+            <div class="threedmodel">
+                <a href="https://a360.co/3VOxDIL"><h2>admix_1_2025</h2></a>
+            </div>
+            <div class="body">
+                <h1 id="hardh1">Body</h1>
+                <h2>Design</h2>
+                <p>
+                    We use <a href="https://www.autodesk.co.jp/products/fusion-360/overview?mktvar002=5022415|SEM|11655048452|115057817442|aud-1620555134072:kwd-11029869505&term=1-YEAR&tab=subscription&utm_source=GGL&utm_medium=SEM&utm_campaign=GGL_D-M_Fusion-360_JAPAN_JP_eComm_SEM_BR_Mix_EX_0064_5022415_MainBrand&utm_id=5022415&utm_term=fusion%20360&gad_source=1&gclid=CjwKCAiA-bmsBhAGEiwAoaQNmlVr79dy70RZl0ZXAJnrnMoT71UNmdSrtioO_p-1CTNq0jMF4QaOOhoCDnkQAvD_BwE&plc=F360">Fusion 360</a> to design our robots.<br><br>
+                    In this app, you can create 3D model of what you want to make.<br><br>
+                    Then, you can also export the file in other file types, f3d, stl, dxf, etc.<br><br>
+                </p>
+                <h2>Frame</h2>
+                <p>We make frames from boards of alminium using CNC machine.<br><br>
+                    This frame can stand strong impact during the game.<br><br>
+                </p>
+                <h2>Motor</h2>
+                <p>
+                    We use <a href="https://www.pololu.com/">pololu</a> 25D 20.4 : 1 motors which can defeat other robots in pushing each other.<br><br>
+                </p>
+                <h2>Micro Computer, Sensor</h2>
+                <p>
+                    All of the sensors and microcomputers are the product of <a href="https://www.daisen-netstore.com/">DAISEN electronic industry company</a>.<br><br>
+                    They are easy to use for beginners, but there is longer delay between sensors and micro computer.<br><br>
+                    We have to make efforts to write shorter program so that robots can process more speedy.<br><br>
+                </p>
+                <h2>Other parts</h2>
+                <p>
+                    Other things, such as covers, the mount to set sensors, or omuni wheels, are made by 3D printer.<br><br>
+                </p>
+                <img src="./body.JPG" width="100%">
+            </div>
+            <div class="electroniccircuit">
+                <h1 id="hardh1">Electronic Circuit</h1>
+                <h2>Design</h2>
+                <p>
+                    We use <a href="https://www.kicad.org/">KiCad</a> to make circuit diagram and pcb.<br><br>
+                    We just made line sensors and DCDC converters using LED, phototransister, resister, condenser, and so on.<br><br>
+                </p>
+                <h2>Ordering</h2>
+                <p>
+                    After making the pcb on KiCad, we order <a href="https://jlcpcb.com/">JLCPCB</a> to make them.
+                    About one or two weeks later, the boards will have been delivered, and we do soldering.
+                </p>
+            </div>
+            <img src="./electroniccircuit.png" width="100%">
+        </div>
+        <div class="ending">
+            <br>
+            <p>© 2023 AU - Toin ADMIX</p>
+            <br>
+        </div>
+        <div class="snslinks">
+            <div class="x">
+                <a href="https://twitter.com/AdmixToin476"><img src=".././X_logo_white.png" width="100%" id="black"></a>
+                <a href="https://twitter.com/AdmixToin476"><img src=".././X_logo.png" width="100%" id="white"></a>
+            </div>
+            <div class="blog">
+                <a href="../../ToinADMIXBlog\index.html"><img src="../../ToinADMIXBlog/img/ToinADMIXBlog_iconwithletters.png" width="100%" id="white" z-index="1"></a>
+                <a href="../../ToinADMIXBlog\index.html"><img src="../../ToinADMIXBlog/img/ToinADMIXBlog_iconwithletters_white.png" width="100%" id="black"></a>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/5-1-11.js"></script>
+        <script>
+            $(".open").click(function() {
+                $(this).toggleClass('active');
+                $("#g-nav").toggleClass('panelactive');
+            });
+            $("#g-nav a").click(function(){
+                $(".open").removeClass('active');
+                $("#g-nav").removeClass('panelactive');
+            })
+        </script>
+    </body>
+</html>

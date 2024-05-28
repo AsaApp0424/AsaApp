@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Soft</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="shortcut icon" href="../Home/ADMIX_LOGO.png">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js'></script>
+        <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js'></script>
+    </head>
+    <body style="background-color:#cc59e814;">
+        <div class="tohome" style="z-index:200">
+            <a href="../Home/">
+                <img src="../Home/ADMIX_home.png" width="120px">
+            </a>
+        </div>
+        <header class="menu" style="z-index:200">
+            <p><a href="../Aboutus/">About us</a></p>
+            <p><a href="../Soft/" id="thispage">Soft</a></p>
+            <p><a href="../Hard/">Hard</a></p>
+            <p><a href="../Videos/">Videos</a></p>
+            <p><a href="../Links/">Links</a></p>
+        </header>
+        <div id="background" style="z-index:100"></div>
+        <p id="iru">a</p>
+        <div class="open"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+            <div class="g-nav-list">
+                <ul>
+                    <li><a href="../Aboutus">About us</a></li>
+                    <li><a href="../Soft/" id="thispage">Soft</a></li>
+                    <li><a href="../Hard/">Hard</a></li>
+                    <li><a href="../Videos/">Videos</a></li>
+                    <li><a href="../Links/">Links</a></li>
+                </ul>
+            </div>
+        </nav>
+        <img src="../Home/programming.png" width="100%" id="topimg">
+        <div class="articles">
+            <h1 id="softh1">2024 (DAISEN C-Style for TJ3B)</h1>
+            <h2>Attacker</h2>
+            <li><a href="./ADMIX_MAIN.txt"><p>main</p></a></li>
+            <li><a href="./LINE_SUB.txt"><p>sub</p></a></li>
+            <h2>Blocker</h2>
+            <li><a href="./KEEPER_2_PIXY.txt"><p>main</p></a></li>
+            <li><a href="./LINE_SUB_keeper.txt"><p>sub</p></a></li>
+            <h1 id="softh1">2025 (Arduino IDE)</h1>
+        </div>
+
+        <div class="ending" id="softending">
+            <br>
+            <p>© 2023 AU - Toin ADMIX</p>
+            <br>
+        </div>
+        <div class="snslinks">
+            <div class="x">
+                <a href="https://twitter.com/AdmixToin476"><img src=".././X_logo_white.png" width="100%" id="black"></a>
+                <a href="https://twitter.com/AdmixToin476"><img src=".././X_logo.png" width="100%" id="white"></a>
+            </div>
+            <div class="blog">
+                <a href="../../ToinADMIXBlog\index.html"><img src="../../ToinADMIXBlog/img/ToinADMIXBlog_iconwithletters.png" width="100%" id="white" z-index="1"></a>
+                <a href="../../ToinADMIXBlog\index.html"><img src="../../ToinADMIXBlog/img/ToinADMIXBlog_iconwithletters_white.png" width="100%" id="black"></a>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/5-1-11.js"></script>
+        <script>
+            $(".open").click(function() {
+                $(this).toggleClass('active');
+                $("#g-nav").toggleClass('panelactive');
+            });
+            $("#g-nav a").click(function(){
+                $(".open").removeClass('active');
+                $("#g-nav").removeClass('panelactive');
+            })
+        </script>
+    </body>
+</html>

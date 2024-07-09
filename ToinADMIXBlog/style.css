@@ -4,6 +4,9 @@ html{
     padding: 0;
     width: 100%;
 }
+body{
+    background: linear-gradient(315deg, #9034e155, #dcb9ff34);
+}
 h1{
     font-size: 40px;
     font-family: 'Ubuntu';
@@ -15,7 +18,7 @@ p{
     font-size: 20px;
 }
 a{
-    color: #000000d8;
+    color: #3e0d6ae6;
     text-decoration: none;
 }
 li{
@@ -23,7 +26,7 @@ li{
 }
 #tohome{
     width: 8%;
-    margin: 0.5% auto auto 0%;
+    margin: 0.5% auto auto 0.5%;
     position: fixed;
 }
 #topimg{
@@ -31,7 +34,7 @@ li{
     margin: 3% auto auto 40%;
 }
 .menu{
-    margin-top: -2%;
+    margin-top: -5%;
     margin-left: -6%;
     width: 25%;
     position: fixed;
@@ -49,14 +52,15 @@ li{
     margin-top: 5%;
     position: relative;
     font-size: 30px;
-    color: #2a4797;
-    font-family: 'Ubuntu';
+    color: #9034e1e6;
+    font-family: 'Moon';
+    font-weight: bold;
 }
 #menutop{
     margin-top: 10%;
 }
 .formenuborder{
-    border: solid 2px #ff4a4ad8;
+    border: solid 2px #5d08a893;
     width: 60%;
     border-radius: 50px;
     margin: auto auto 3% 28%;
@@ -64,13 +68,13 @@ li{
 .menu a{
     position: relative;
     font-size: 20px;
-    color: #000000;
+    color: #9034e1e6;
 }
 .menu a p{
     font-size: 15px;
     font-family: 'Ubuntu';
     margin: auto auto auto 30%;
-    background-color: #224bdd4d;
+    background-color: #a66cd900;
     width: 50%;
     padding: 1% 1% 1% 3%;
     border: solid 1px #ffffff00;
@@ -81,7 +85,7 @@ li{
     box-shadow:1.5px 0px 5px 1px #00000038;
 }
 .menu a p:hover{
-    background-color: #224bdd2c;
+    background-color: #862fd33d;
     transition: 0.3s;
 }
 .back{
@@ -95,22 +99,22 @@ li{
 #newest{
     font-size: 45px;
     margin: 1% auto auto 27%;
-    color: #2a4aa1;
+    color: #6a0fb9e6;
     font-family: 'Ubuntu';
 }
 .articles{
     width: 50%;
     display: block;
     margin: auto;
-    border: solid 2px #224bdd00;
+    border: solid 2px #a66cd900;
     border-radius: 70px;
-    background-color: #224bdd22;
+    background-color: #a66cd900;
     margin: 2% auto auto auto;
     transition: 0.3s;
     box-shadow:1px 1px 10px 3px #00000038;
 }
 .articles:hover{
-    background-color: #224bdd00;
+    background-color: #862fd347;
     transition: 0.3s;
     box-shadow:1px 1px 15px 1px #00000020;
 }
@@ -126,7 +130,7 @@ li{
     font-size: 20px;
     font-family: Ubuntu;
     margin: auto 1% auto 0%;
-    background-color: black;
+    background-color: #49117ae6;
     color: white;
     padding: 0.5%;
     border-radius: 5px;
@@ -142,14 +146,14 @@ li{
     position: relative;
 }
 #forborder1{
-    border-top:solid 5px #ff4a4ad8;
+    border-top:solid 5px #5d08a893;
     border-radius: 50px;
     width: 50%;
     margin-left: 25%;
     margin-top: 0.5%;
 }
 #forborder2{
-    border-top:solid 5px #ff4a4ad8;
+    border-top:solid 5px #5d08a893;
     border-radius: 50px;
     width: 50%;
     margin-left: 25%;
@@ -161,7 +165,7 @@ li{
 .ending{
     display: block;
     margin: auto;
-    background-color: #224bdd4d;
+    background-color: #761fc2e6;
     height: 90px;
     margin: 5% -0.4% -1% -0.5%;
 }
@@ -197,13 +201,13 @@ li{
     display: none;
 }
 #fortitleborder{
-    border: solid 3px #ff4a4ad8;
+    border: solid 3px #5d08a893;
     width: 40%;
     margin: 2% auto 2% 30%;
     border-radius: 30px;
 }
 #title{
-    color: #000000d8;
+    color: #6a0fb9e6;
     margin-left: 25%;
     text-align: center;
     border-radius: 10px;
@@ -213,9 +217,9 @@ li{
 }
 #date{
     font-size: 25px;
-    font-family: 'Ubuntu';
+    font-family: 'Moon';
     margin: auto auto auto 60%;
-    color: #1a2e67;
+    color: #3e0d6ae6;
 }
 .tags{
     margin: auto auto auto 30%;
@@ -225,7 +229,7 @@ li{
     font-size: 20px;
     font-family: Ubuntu;
     margin: auto 1% auto 0%;
-    background-color: black;
+    background-color: #9034e1e6;
     color: white;
     padding: 0.5%;
     border-radius: 5px;
@@ -233,14 +237,14 @@ li{
 .imginarticles{
     width: 50%;
     margin: 2% auto auto 25%;
-    border:solid 5px #224bddd8;
+    border:solid 5px #5d08a893;
     border-radius: 70px;
 }
 .contents h2{
     color: #000000;
     margin: 10% auto 3% 25%;
-    border-bottom: solid 3px #ff4a4ad8;
-    border-left: solid 13px #ff4a4ad8;
+    border-bottom: solid 3px #5d08a893;
+    border-left: solid 13px #5d08a893;
     width: 50%;
 }
 .contents p{
@@ -251,7 +255,7 @@ li{
     line-height: 175%;
 }
 .contents a{
-    color: #224bddd8;
+    color: #5d08a893;
     transition: 0.3s;
 }
 .contents a:hover{

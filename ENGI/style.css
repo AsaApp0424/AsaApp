@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* body横幅96rem */
+body{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 62.5%;/*1rem=10px*/
+    --color1: #111111;/*black*/
+    --color2: #ffffff;/*white*/
+    --color3: #4564d4;/*button bgcolor*/
+}
+
+input{
+    font-size: 7rem;
+    color: var(--color1);
+    background: var(--color2);
+    border: 1rem solid var(--color1);
+    margin-bottom: 1rem;
+    width: 76rem;
+    margin: 9rem 0rem 0rem 9rem;
+}
+
+button{
+    font-size: 10rem;
+    border: 0px;
+    border-radius: 10rem;
+    padding: 10rem;
+    color: var(--color2);
+    background: var(--color3);
+    margin: 0 auto;
+    width: 50rem;
+    margin: 9rem 0rem 0rem 23rem;
+}
+
+#comment1, #comment2{
+    font-size: 6rem;
+    color: var(--color1);
+    text-align: center;
+}
